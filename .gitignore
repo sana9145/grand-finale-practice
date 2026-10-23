@@ -1,0 +1,7 @@
+# Not part of the app
+app-update/
+*.zip
+.claude/
+node_modules/
+GAME_PROMPT.md
+UPDATE_PROMPT.md
