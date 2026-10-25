@@ -170,7 +170,7 @@ check(errors.length === 0, 'Loads with no errors' + (errors.length ? ': ' + erro
 check(await ev('["home","today","mock","board","legacy","parent","plan","settings","editor","wordForm","import","backup","print","history","reset","strategy","progress","az","azLetter","azList","azPlay","extreme","extremeList","stickers","shop"].every(s => typeof App.screens[s] === "function")'), 'All screens loaded');
 check(await ev('!!document.querySelector(".mode.today")'), 'Home screen renders');
 check(await ev('/days? to the final|final is today|final was/.test(document.body.innerText)'), 'Countdown shows');
-check(await ev('/Plan: \\d+ of 2016 words mastered/.test(document.body.innerText)'), 'Plan progress shows 2,016 words');
+check(await ev('/Plan: \\d+ of 2165 words mastered/.test(document.body.innerText)'), 'Plan progress shows 2,165 words');
 check(await ev('document.title') === 'Grand Finale Practice', 'Page title is plain');
 const mode = await ev('UI.speech.mode()');
 console.log('  (speech mode in headless browser: ' + mode + ')');
@@ -512,7 +512,7 @@ await clickText('Print lists');
 await S('Emulation.setEmulatedMedia', { media: 'print' });
 await sleep(150);
 const pr = await ev('(() => { const s = document.querySelector(".print-sheet"); const l = document.querySelector(".plist"); const top = document.querySelector(".topbar"); return { visible: s && getComputedStyle(s).display !== "none", cols: l && getComputedStyle(l).columnCount, top: top && getComputedStyle(top).display, items: document.querySelectorAll(".plist li").length }; })()');
-check(pr.visible && pr.cols === '2' && pr.top === 'none' && pr.items === 48, `Print view: list visible, 2 columns, header hidden, ${pr.items} words (Geography easy)`);
+check(pr.visible && pr.cols === '2' && pr.top === 'none' && pr.items === 101, `Print view: list visible, 2 columns, header hidden, ${pr.items} words (Geography easy)`);
 const pdf = await S('Page.printToPDF', { printBackground: false });
 writeFileSync(join(outDir, '06-print-geography-easy.pdf'), Buffer.from(pdf.data, 'base64'));
 await S('Emulation.setEmulatedMedia', { media: '' });

@@ -63,7 +63,8 @@
         }
       }
       if (!found) {
-        var at = w.indexOf(L);
+        // A silent e or a sits near the end ("breathe", "logically"); any other letter: the first one.
+        var at = L === 'e' || L === 'a' ? w.lastIndexOf(L) : w.indexOf(L);
         if (at >= 0) found = { start: at, chunk: null };
       }
       if (found) {

@@ -25,14 +25,14 @@ const find = (d, fn) => d.words.find(fn);
 test('the real schema-2 file is accepted and the counts are reported', () => {
   const r = runTool(bank);
   assert.strictEqual(r.code, 0, r.stderr);
-  assert.match(r.stdout, /All words\s+3399/);
+  assert.match(r.stdout, /All words\s+3662/);
   assert.match(r.stdout, /On the 6-8 list\s+1457 \(102 of them also on the 9-11 list\)/);
   assert.match(r.stdout, /On the 9-11 list\s+1635/);
   assert.match(r.stdout, /A-Z words \(either list\)\s+2990, across 26 letters/);
   assert.match(r.stdout, /9-11 bands\s+easy 62 · medium 533 · hard 826 · extreme 214/);
-  assert.match(r.stdout, /Animals theme\s+197 \(easy 52 · medium 68 · hard 77\)/);
-  assert.match(r.stdout, /Silent-letters theme\s+219 \(easy 49 · medium 92 · hard 78\)/);
-  assert.match(r.stdout, /Geography theme\s+189 /);
+  assert.match(r.stdout, /Animals theme\s+256 \(easy 70 · medium 68 · hard 118\)/);
+  assert.match(r.stdout, /Silent-letters theme\s+337 \(easy 62 · medium 128 · hard 147\)/);
+  assert.match(r.stdout, /Geography theme\s+296 /);
 });
 
 test('rejects a wrong letter, naming the record', () => {

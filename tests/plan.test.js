@@ -3,7 +3,7 @@ const assert = require('node:assert');
 const { GF, bank, merged } = require('./_load.js');
 const P = GF.plan;
 
-test('default plan size matches the data (2,016 words, with the 9-11 row)', () => {
+test('default plan size matches the data (2,165 words, with the 9-11 row)', () => {
   const words = merged().words;
   const def = P.defaultPlan(bank);
   assert.deepStrictEqual(def.geography, bank.study_plan_default.geography);
@@ -18,20 +18,20 @@ test('default plan size matches the data (2,016 words, with the 9-11 row)', () =
     if (w.band_9_11 && bank.study_plan_default.list_9_11.includes(w.band_9_11)) ids.add(w.id);
   }
   assert.strictEqual(P.planIds(words, bank, def).length, ids.size);
-  assert.strictEqual(ids.size, 2016);
+  assert.strictEqual(ids.size, 2165);
 });
 
 test('pool sizes match the README table', () => {
   const words = merged().words;
   const t = (th, tier) => P.themePool(words, bank, th, tier).length;
-  assert.deepStrictEqual([t('geography', 'easy'), t('geography', 'medium'), t('geography', 'hard')], [48, 80, 61]);
-  assert.deepStrictEqual([t('animals', 'easy'), t('animals', 'medium'), t('animals', 'hard')], [52, 68, 77]);
-  assert.deepStrictEqual([t('silent_letter', 'easy'), t('silent_letter', 'medium'), t('silent_letter', 'hard')], [49, 92, 78]);
+  assert.deepStrictEqual([t('geography', 'easy'), t('geography', 'medium'), t('geography', 'hard')], [101, 80, 115]);
+  assert.deepStrictEqual([t('animals', 'easy'), t('animals', 'medium'), t('animals', 'hard')], [70, 68, 118]);
+  assert.deepStrictEqual([t('silent_letter', 'easy'), t('silent_letter', 'medium'), t('silent_letter', 'hard')], [62, 128, 147]);
   const b = (band) => P.bandPool(words, bank, band).length;
   assert.deepStrictEqual([b('easy'), b('medium'), b('hard'), b('extreme')], [62, 533, 826, 214]);
   const r = (l, f) => P.round2Pool(words, bank, l, f).length;
-  assert.deepStrictEqual([r('easy', true), r('medium', true), r('hard', true)], [63, 107, 124]);
-  assert.deepStrictEqual([r('easy', false), r('medium', false), r('hard', false)], [285, 599, 672]);
+  assert.deepStrictEqual([r('easy', true), r('medium', true), r('hard', true)], [77, 131, 139]);
+  assert.deepStrictEqual([r('easy', false), r('medium', false), r('hard', false)], [299, 623, 687]);
 });
 
 test('round-2 pools never include theme-extra words', () => {
@@ -85,14 +85,14 @@ test('the 9-11 row adds and removes words; extreme words only when ticked', () =
   for (const id of withRow) assert.ok(!byId[id].extreme, 'extreme word in the default plan: ' + id);
   plan.list_9_11 = [];
   const without = new Set(P.planIds(words, bank, plan));
-  assert.strictEqual(without.size, 660);
+  assert.strictEqual(without.size, 812);
   for (const id of P.bandPool(words, bank, 'medium')) {
     const w = byId[id];
     if (without.has(id)) assert.ok(w.themes.length || w.round2_focus, id); // in the plan for another reason
   }
   plan.list_9_11 = ['extreme'];
   const ext = new Set(P.planIds(words, bank, plan));
-  assert.strictEqual(ext.size, 660 + 214);
+  assert.strictEqual(ext.size, 812 + 214);
   for (const id of P.bandPool(words, bank, 'extreme')) assert.ok(ext.has(id));
 });
 
