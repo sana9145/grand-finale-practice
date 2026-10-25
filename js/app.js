@@ -85,6 +85,7 @@
     App.keyHandler = null;
     App.hiddenWord = null; // set again by a question card
     document.title = 'Grand Finale Practice';
+    try { UI.backdrop.apply(GF.stickers.theme(App.state.rewards), App.state.settings.themeBg !== false); } catch (e) { /* the background is only decoration */ }
     UI.clear(main);
     var ui = App.state.ui || { screen: 'home', params: {} };
     var fn = App.screens[ui.screen] || App.screens.home;
@@ -116,6 +117,9 @@
   // A pack of 3 stickers to open (finishing a board, an A-Z part, or Today's goal).
   App.givePack = function (reason) {
     var item = GF.stickers.award(App.state.rewards, App.rand('pack' + reason), GF.stickers.PACK_SIZE, 'pack', reason);
+    // ...and a surprise for the dress-up doll, while there are things left to win.
+    var gift = GF.dress.gift(App.state.dress, App.rand('gift' + reason));
+    if (gift) item.dress = gift;
     App.syncStickers();
     return item;
   };
@@ -152,7 +156,7 @@
     var snap = {
       session: bare, progress: st.progress[id] ? GF.util.clone(st.progress[id]) : null, stickers: st.profile.stickers,
       activity: st.activity[day] ? GF.util.clone(st.activity[day]) : null, day: day, backup: GF.util.clone(st.backup), logLen: st.log.length,
-      rewards: GF.util.clone(st.rewards), az: st.az.w[id] || null
+      rewards: GF.util.clone(st.rewards), az: st.az.w[id] || null, dress: GF.util.clone(st.dress)
     };
     s.undo = (s.undo || []).concat([snap]).slice(-5);
     st.progress[id] = GF.scheduler.answer(st.progress[id], right, now, day);
@@ -185,6 +189,7 @@
     if (id) { if (snap.progress) st.progress[id] = snap.progress; else delete st.progress[id]; }
     st.profile.stickers = snap.stickers;
     if (snap.rewards) st.rewards = snap.rewards;
+    if (snap.dress) st.dress = snap.dress;
     if (id && snap.az !== undefined) { if (snap.az) st.az.w[id] = snap.az; else delete st.az.w[id]; }
     if (snap.activity) st.activity[snap.day] = snap.activity; else delete st.activity[snap.day];
     st.backup = snap.backup;

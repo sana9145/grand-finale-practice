@@ -3,6 +3,7 @@
   'use strict';
   var UI = window.UI, h = UI.h, GF = window.GF, App = window.App;
   var Board = GF.board, P = GF.plan, S = GF.scheduler, F = GF.finale, U = GF.util, K = GF.stickers;
+  var GOLDEN_STARS = 5;
 
   function newCard(id) { return { id: id, revealed: false, spoken: false, asked: {} }; }
   function themeById(id) { return App.bank.themes.filter(function (t) { return t.id === id; })[0] || { id: id, label: id, emoji: '' }; }
@@ -198,6 +199,7 @@
       if (f.azDone) extra.push(h('p.sticker-won', '✓ Done in the A–Z tab!'));
       if (f.letterDone) extra.push(h('p.sticker-won', '🏅 Letter ' + f.letterDone + ' is complete! The golden ' + f.letterDone + ' is in your sticker book.'));
       if (f.champion) extra.push(h('p.sticker-won', '🏆 A to Z Champion!'));
+      if (f.golden) extra.push(h('p.sticker-won', '✨ Golden word! +' + GOLDEN_STARS + ' bonus stars!'));
       cardBox.appendChild(UI.card.feedback({
         word: word, right: f.right, auto: f.auto, extra: extra, fb: f,
         nextLabel: f.finished && key === 'board' ? 'See my trophy ➜' : 'Next word ➜',
@@ -207,12 +209,26 @@
       return;
     }
 
+    // One golden word a day in Today's practice, chosen from the next few words.
+    if (key === 'today' && s.golden === undefined) {
+      var next10 = s.board.queue.slice(0, 10);
+      s.golden = next10.length ? next10[U.hashSeed(s.day + ':gold') % next10.length] : null;
+      App.save();
+    }
+    var golden = key === 'today' && s.golden && s.card.id === s.golden && !s.goldenDone;
     var card = UI.card.question({
       word: word, card: s.card, autoSpeak: !!opts.autoSpeak,
+      header: golden ? h('span.chip.golden', '✨ Golden word! Spell it right for ' + GOLDEN_STARS + ' bonus stars') : null,
       onChange: App.save,
       onReveal: function () { App.rerender(); },
       onJudge: function (right, auto) {
         App.answer(key, right, function (sess, r) {
+          if (key === 'today' && r && sess.golden && sess.card.id === sess.golden && !sess.goldenDone) {
+            sess.goldenDone = true;
+            sess.feedback.golden = true;
+            st.rewards.stars += GOLDEN_STARS;
+            st.rewards.starsEarned += GOLDEN_STARS;
+          }
           sess.board = Board.answer(sess.board, r, U.rng(sess.seed + sess.board.answered * 31 + 7));
           sess.feedback.move = sess.board.lastMove;
           sess.feedback.finished = sess.board.finished;

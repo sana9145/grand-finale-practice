@@ -79,7 +79,7 @@ const AUDIT = `(() => {
   const clipsX = (el) => { for (let p = el.parentElement; p && p !== document.body; p = p.parentElement) { const o = getComputedStyle(p).overflowX; if (o === 'auto' || o === 'scroll' || o === 'hidden' || o === 'clip') return p; } return null; };
   const name = (el) => el.tagName.toLowerCase() + (el.className && typeof el.className === 'string' ? '.' + el.className.trim().split(/\\s+/).join('.') : '') + ' "' + (el.textContent || '').trim().slice(0, 30) + '"';
   for (const el of document.querySelectorAll('body *')) {
-    if (el.closest('.confetti, .toast, .hold-fill, svg, noscript')) continue;
+    if (el.closest('.confetti, .toast, .hold-fill, svg, noscript, .bg-layer')) continue;
     if (!visible(el)) continue;
     const r = el.getBoundingClientRect();
     if ((r.right > vw + 1 || r.left < -1) && !clipsX(el)) out.sticking.push(name(el) + ' [' + Math.round(r.left) + '..' + Math.round(r.right) + ' of ' + vw + ']');
@@ -96,7 +96,7 @@ const AUDIT = `(() => {
   const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   let n;
   while ((n = w.nextNode())) {
-    if (!n.nodeValue.trim() || !n.parentElement || n.parentElement.closest('.confetti, .toast, noscript, script, style')) continue;
+    if (!n.nodeValue.trim() || !n.parentElement || n.parentElement.closest('.confetti, .toast, noscript, script, style, svg, .bg-layer')) continue;
     if (!visible(n.parentElement)) continue;
     const fs = parseFloat(getComputedStyle(n.parentElement).fontSize);
     if (fs > 0 && fs < 13) out.tiny.push(name(n.parentElement) + ' ' + fs + 'px');
@@ -126,6 +126,7 @@ const PRE = `const click = (t, sel) => { const b = [...document.querySelectorAll
   const closeAll = () => { document.querySelectorAll('.modal-back').forEach(m => m.remove()); UI.closeModal(); };`;
 const STATES = [
   ['home', `closeAll(); App.go('home')`],
+  ['home with ocean background', `GF.stickers.ALL.forEach(x => { App.state.rewards.owned[x.id] = 1; }); App.state.rewards.boardTheme = 'ocean'; App.syncStickers(); App.go('home')`],
   ['today question', `App.state.sessions.today = null; App.startToday()`],
   ['today meaning + sentence', `click('Meaning'); click('Sentence'); click('Part of speech')`],
   ['today after Check', `click('Check')`],
@@ -166,7 +167,7 @@ const STATES = [
   ['sticker big', `UI.rewards.showSticker('yarn')`, 200],
   ['badges', `closeAll(); App.state.rewards.badges.letters = { A: 1, B: 1, X: 1 }; App.state.rewards.badges.trophies = { firstMock: 1 }; App.go('stickers', { page: 'badges' })`],
   ['my board', `App.go('stickers', { page: 'board' })`],
-  ['sticker shop', `App.state.rewards.stars = 30; App.go('shop')`],
+  ['sticker shop', `delete App.state.rewards.owned.yarn; delete App.state.rewards.owned.kite; App.syncStickers(); App.state.rewards.stars = 30; App.go('shop')`],
   ['shop confirm', `document.querySelector('.slot.shop:not([disabled])').click()`, 200],
   ['parent menu', `closeAll(); App.parentUnlocked = true; App.go('parent')`],
   ['study plan', `App.go('plan')`],
@@ -184,7 +185,27 @@ const STATES = [
   ['mock history item', `App.go('historyItem', { id: 'mx' })`],
   ['reset', `App.go('reset')`],
   ['reset confirm', `document.querySelector('.danger-item').click()`, 200],
-  ['nothing to fix', `closeAll(); App.go('noMistakes')`]
+  ['nothing to fix', `closeAll(); App.go('noMistakes')`],
+  ['golden word', `App.state.sessions.today = null; App.startToday(); const s = App.state.sessions.today; s.golden = s.card.id; s.goldenDone = false; App.rerender()`],
+  ['golden word right', `click('Check'); click('Right')`, 200],
+  ['pack with doll gift', `closeAll(); App.state.rewards.pending = []; App.givePack('the check'); App.rerender()`, 1600],
+  ['dress-up studio', `closeAll(); App.state.rewards.pending = []; App.state.rewards.stars = 7; App.go('dress')`],
+  ['studio hair', `App.go('dress', { slot: 'hair' })`],
+  ['studio head', `App.go('dress', { slot: 'head' })`],
+  ['studio eyes', `App.go('dress', { slot: 'eyes' })`],
+  ['studio colours', `App.go('dress', { slot: 'outfitColor' })`],
+  ['studio backdrops', `App.go('dress', { slot: 'backdrop' })`],
+  ['try on, not enough stars', `document.querySelector('.item-tile.locked').click()`, 200],
+  ['try on, can buy', `closeAll(); App.state.rewards.stars = 100; App.go('dress', { slot: 'back' }); document.querySelector('.item-tile.locked').click()`, 200],
+  ['bought wings', `click('Get it for', '.modal button')`, 300],
+  ['all dressed up', `closeAll(); const d = App.state.dress; GF.dress.ITEMS.forEach(i => { d.owned[i.id] = 1; });
+    Object.assign(d.look, { outfit: 'out-lehenga', outfitColor: 'oc-red', pattern: 'pat-sparkle', hair: 'hair-wavy', hairColor: 'hc-rainbow', head: 'hd-crown', eyes: 'eye-sparkle',
+      shadow: 'sha-rainbow', lips: 'lip-glitter', cheeks: 'chk-hearts', paint: 'fp-butterfly', glasses: 'gl-heart', neck: 'nk-pearls', hand: 'hn-wand', back: 'bk-fairy', pet: 'pet-unicorn', backdrop: 'bd-castle', shoes: 'sh-glass' });
+    App.go('dress', { slot: 'outfit' })`],
+  ['shalwar kameez and scarf', `Object.assign(App.state.dress.look, { outfit: 'out-shalwar', outfitColor: 'oc-teal', pattern: 'pat-flowers', head: 'hd-scarf', back: 'bk-none', pet: 'pet-kitten', backdrop: 'bd-mountains', glasses: 'gl-none', hand: 'hn-flowers', skin: 'skin4' }); App.go('dress', { slot: 'outfit' })`],
+  ['my looks', `const d = App.state.dress; d.looks = []; for (let i = 0; i < 4; i++) { GF.dress.surprise(d, GF.util.rng(i + 1)); GF.dress.saveLook(d, i); } App.go('dressLooks')`],
+  ['space background', `App.state.rewards.boardTheme = 'space'; App.go('home')`],
+  ['candy background on a board', `App.state.rewards.boardTheme = 'candy'; App.state.sessions.board = null; App.startBoard({ type: 'theme', theme: 'animals', tier: 'medium' })`]
 ];
 
 const DEVICES = [
@@ -261,7 +282,7 @@ ok(reg, 'The offline helper is installed after the first visit');
 await sleep(800);
 await S('Network.emulateNetworkConditions', { offline: true, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
 await load(base + 'index.html');
-ok(await ev(`!!(window.App && App.words && App.words.length === 3326 && document.querySelector('.screen') && !/Oops/.test(document.body.innerText))`), 'With no internet the app still opens, with all 3,326 words');
+ok(await ev(`!!(window.App && App.words && App.words.length === 3399 && document.querySelector('.screen') && !/Oops/.test(document.body.innerText))`), 'With no internet the app still opens, with all 3,399 words');
 await S('Network.emulateNetworkConditions', { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
 ok(await ev(`!!document.querySelector('link[rel=manifest]') && !!document.querySelector('link[rel=apple-touch-icon]')`), 'Home-screen icon and app manifest are linked');
 
@@ -279,7 +300,7 @@ const emb = await ev(`(async () => {
   const copyBox = !!w.document.querySelector('.copybox');
   return { embedded: App.embedded, printHidden, copyBox, words: App.words.length };
 })()`);
-ok(emb.embedded && emb.printHidden && emb.copyBox && emb.words === 3326, `Inside another page: print buttons hidden, backup shown as text to copy (${JSON.stringify(emb)})`);
+ok(emb.embedded && emb.printHidden && emb.copyBox && emb.words === 3399, `Inside another page: print buttons hidden, backup shown as text to copy (${JSON.stringify(emb)})`);
 
 await browser.close();
 server.close();

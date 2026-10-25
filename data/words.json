@@ -1029,6 +1029,40 @@
  ],
  "words": [
   {
+   "id": "abbottabad",
+   "word": "abbottabad",
+   "display": "Abbottabad",
+   "letter": "A",
+   "pos": "noun",
+   "meaning": "A city in Khyber Pakhtunkhwa, Pakistan.",
+   "sentence": "Abbottabad is a cool, green city.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "abide",
    "word": "abide",
    "display": "abide",
@@ -1801,6 +1835,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "algeria",
+   "word": "algeria",
+   "display": "Algeria",
+   "letter": "A",
+   "pos": "noun",
+   "meaning": "The largest country in Africa, in the north.",
+   "sentence": "Algeria is the biggest country in Africa.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -2667,6 +2735,40 @@
    ],
    "theme_tier": {
     "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "armadillo",
+   "word": "armadillo",
+   "display": "armadillo",
+   "letter": "A",
+   "pos": "noun",
+   "meaning": "An animal covered in hard plates that can roll into a ball.",
+   "sentence": "The armadillo rolled into a tight ball.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "hard"
    },
    "silent_letters": [],
    "silent_pattern": null,
@@ -4309,6 +4411,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "bahawalpur",
+   "word": "bahawalpur",
+   "display": "Bahawalpur",
+   "letter": "B",
+   "pos": "noun",
+   "meaning": "A city in the south of Punjab, near the Cholistan desert.",
+   "sentence": "We visited Noor Mahal in Bahawalpur.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -6840,6 +6976,40 @@
    "notes": ""
   },
   {
+   "id": "bison",
+   "word": "bison",
+   "display": "bison",
+   "letter": "B",
+   "pos": "noun",
+   "meaning": "A large wild animal like a cow, with a hump and shaggy hair.",
+   "sentence": "A herd of bison ran across the grassland.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "bitter",
    "word": "bitter",
    "display": "bitter",
@@ -7538,6 +7708,42 @@
    "notes": ""
   },
   {
+   "id": "bomb",
+   "word": "bomb",
+   "display": "bomb",
+   "letter": "B",
+   "pos": "noun",
+   "meaning": "A weapon that explodes.",
+   "sentence": "The old bomb was found and made safe.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "easy"
+   },
+   "silent_letters": [
+    "b"
+   ],
+   "silent_pattern": "b",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent b"
+  },
+  {
    "id": "bombinate",
    "word": "bombinate",
    "display": "bombinate",
@@ -7776,6 +7982,42 @@
    "final_2025": null,
    "needs_review": false,
    "notes": ""
+  },
+  {
+   "id": "bought",
+   "word": "bought",
+   "display": "bought",
+   "letter": "B",
+   "pos": "verb",
+   "meaning": "Past of buy.",
+   "sentence": "We bought fresh mangoes from the market.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "gh"
+   ],
+   "silent_pattern": "gh",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent gh"
   },
   {
    "id": "boulder",
@@ -10838,6 +11080,40 @@
    "notes": ""
   },
   {
+   "id": "capital",
+   "word": "capital",
+   "display": "capital",
+   "letter": "C",
+   "pos": "noun",
+   "meaning": "The city where a country's government is.",
+   "sentence": "Islamabad is the capital of Pakistan.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "capstan",
    "word": "capstan",
    "display": "capstan",
@@ -12149,6 +12425,42 @@
    "final_2025": null,
    "needs_review": false,
    "notes": ""
+  },
+  {
+   "id": "caught",
+   "word": "caught",
+   "display": "caught",
+   "letter": "C",
+   "pos": "verb",
+   "meaning": "Past of catch.",
+   "sentence": "Ali caught the ball with one hand.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "gh"
+   ],
+   "silent_pattern": "gh",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent gh"
   },
   {
    "id": "cauldron",
@@ -13707,6 +14019,40 @@
    "notes": ""
   },
   {
+   "id": "chenab",
+   "word": "chenab",
+   "display": "Chenab",
+   "letter": "C",
+   "pos": "noun",
+   "meaning": "One of the five rivers of Punjab.",
+   "sentence": "The Jhelum river flows into the Chenab.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "cherry",
    "word": "cherry",
    "display": "cherry",
@@ -14080,6 +14426,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "chitral",
+   "word": "chitral",
+   "display": "Chitral",
+   "letter": "C",
+   "pos": "noun",
+   "meaning": "A valley and town in the north of Khyber Pakhtunkhwa.",
+   "sentence": "Chitral is close to the Hindu Kush mountains.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -17742,6 +18122,40 @@
    "notes": ""
   },
   {
+   "id": "continent",
+   "word": "continent",
+   "display": "continent",
+   "letter": "C",
+   "pos": "noun",
+   "meaning": "One of the seven very large areas of land on Earth.",
+   "sentence": "Asia is the biggest continent.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "continue",
    "word": "continue",
    "display": "continue",
@@ -18205,6 +18619,40 @@
    "notes": ""
   },
   {
+   "id": "country",
+   "word": "country",
+   "display": "country",
+   "letter": "C",
+   "pos": "noun",
+   "meaning": "A land with its own government and people.",
+   "sentence": "Pakistan is my country.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "easy"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "coup",
    "word": "coup",
    "display": "coup",
@@ -18453,6 +18901,40 @@
    "notes": ""
   },
   {
+   "id": "crane",
+   "word": "crane",
+   "display": "crane",
+   "letter": "C",
+   "pos": "noun",
+   "meaning": "A tall bird with long legs and a long neck.",
+   "sentence": "The crane stood on one leg in the water.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "crescent",
    "word": "crescent",
    "display": "crescent",
@@ -18574,6 +19056,40 @@
    ],
    "theme_tier": {
     "animals": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "crow",
+   "word": "crow",
+   "display": "crow",
+   "letter": "C",
+   "pos": "noun",
+   "meaning": "A large black bird with a loud harsh call.",
+   "sentence": "A crow sat on the wall and cawed loudly.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "easy"
    },
    "silent_letters": [],
    "silent_pattern": null,
@@ -24280,6 +24796,40 @@
    "notes": ""
   },
   {
+   "id": "dove",
+   "word": "dove",
+   "display": "dove",
+   "letter": "D",
+   "pos": "noun",
+   "meaning": "A gentle grey or white bird; a sign of peace.",
+   "sentence": "A white dove flew over the school roof.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "easy"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "dragon",
    "word": "dragon",
    "display": "dragon",
@@ -27475,6 +28025,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "equator",
+   "word": "equator",
+   "display": "equator",
+   "letter": "E",
+   "pos": "noun",
+   "meaning": "An imaginary line around the middle of the Earth.",
+   "sentence": "Countries near the equator are hot.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -31939,6 +32523,40 @@
    "notes": ""
   },
   {
+   "id": "fiji",
+   "word": "fiji",
+   "display": "Fiji",
+   "letter": "F",
+   "pos": "noun",
+   "meaning": "An island country in the Pacific Ocean. Its capital is Suva.",
+   "sentence": "Fiji is made up of more than 300 islands.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "file",
    "word": "file",
    "display": "file",
@@ -34493,6 +35111,42 @@
    "notes": ""
   },
   {
+   "id": "fought",
+   "word": "fought",
+   "display": "fought",
+   "letter": "F",
+   "pos": "verb",
+   "meaning": "Past of fight.",
+   "sentence": "The two cats fought over the fish.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "gh"
+   ],
+   "silent_pattern": "gh",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent gh"
+  },
+  {
    "id": "found",
    "word": "found",
    "display": "found",
@@ -36785,6 +37439,40 @@
     "theme": "animals",
     "finalist_right": true
    },
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "glacier",
+   "word": "glacier",
+   "display": "glacier",
+   "letter": "G",
+   "pos": "noun",
+   "meaning": "A huge, slow-moving river of ice.",
+   "sentence": "The Baltoro Glacier is in northern Pakistan.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
    "needs_review": false,
    "notes": ""
   },
@@ -39923,6 +40611,40 @@
    "notes": ""
   },
   {
+   "id": "gujranwala",
+   "word": "gujranwala",
+   "display": "Gujranwala",
+   "letter": "G",
+   "pos": "noun",
+   "meaning": "A large city in Punjab.",
+   "sentence": "Gujranwala is famous for its food.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "gull",
    "word": "gull",
    "display": "gull",
@@ -40068,6 +40790,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "gwadar",
+   "word": "gwadar",
+   "display": "Gwadar",
+   "letter": "G",
+   "pos": "noun",
+   "meaning": "A port city on the coast of Balochistan.",
+   "sentence": "Ships come to the port of Gwadar.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -40684,6 +41440,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "hamster",
+   "word": "hamster",
+   "display": "hamster",
+   "letter": "H",
+   "pos": "noun",
+   "meaning": "A small furry pet that stores food in its cheeks.",
+   "sentence": "My hamster runs on its wheel all night.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -45110,6 +45900,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "hunza",
+   "word": "hunza",
+   "display": "Hunza",
+   "letter": "H",
+   "pos": "noun",
+   "meaning": "A beautiful valley in Gilgit-Baltistan, Pakistan.",
+   "sentence": "Hunza is famous for its apricots.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "easy"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -52958,6 +53782,40 @@
    "notes": ""
   },
   {
+   "id": "jamaica",
+   "word": "jamaica",
+   "display": "Jamaica",
+   "letter": "J",
+   "pos": "noun",
+   "meaning": "An island country in the Caribbean Sea.",
+   "sentence": "Jamaica is an island in the Caribbean.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "jamboree",
    "word": "jamboree",
    "display": "jamboree",
@@ -53351,6 +54209,40 @@
    "silent_pattern": null,
    "sound_alike_with": [],
    "spelling_note": "British spelling. American spelling: jewelry.",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "jhelum",
+   "word": "jhelum",
+   "display": "Jhelum",
+   "letter": "J",
+   "pos": "noun",
+   "meaning": "A river and a city in Punjab.",
+   "sentence": "We crossed the Jhelum on a long bridge.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
    "final_2025": null,
    "needs_review": false,
    "notes": ""
@@ -54700,6 +55592,40 @@
    "notes": ""
   },
   {
+   "id": "khyberpakhtunkhwa",
+   "word": "khyber pakhtunkhwa",
+   "display": "Khyber Pakhtunkhwa",
+   "letter": "K",
+   "pos": "noun",
+   "meaning": "A province in the north-west of Pakistan. Its capital is Peshawar.",
+   "sentence": "Peshawar is the capital of Khyber Pakhtunkhwa.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "kicking",
    "word": "kicking",
    "display": "kicking",
@@ -55117,6 +56043,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "kingfisher",
+   "word": "kingfisher",
+   "display": "kingfisher",
+   "letter": "K",
+   "pos": "noun",
+   "meaning": "A small bright blue bird that dives into water to catch fish.",
+   "sentence": "The kingfisher dived into the river.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "hard"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -57811,6 +58771,40 @@
    "notes": ""
   },
   {
+   "id": "libya",
+   "word": "libya",
+   "display": "Libya",
+   "letter": "L",
+   "pos": "noun",
+   "meaning": "A country in North Africa with a lot of desert.",
+   "sentence": "Most of Libya is desert.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "licence",
    "word": "licence",
    "display": "licence",
@@ -59423,6 +60417,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "magpie",
+   "word": "magpie",
+   "display": "magpie",
+   "letter": "M",
+   "pos": "noun",
+   "meaning": "A black and white bird with a long tail.",
+   "sentence": "The magpie picked up a shiny button.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -61978,6 +63006,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "meerkat",
+   "word": "meerkat",
+   "display": "meerkat",
+   "letter": "M",
+   "pos": "noun",
+   "meaning": "A small African animal that stands up on its back legs to look around.",
+   "sentence": "The meerkat stood up to watch for danger.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -64737,6 +65799,40 @@
    "notes": ""
   },
   {
+   "id": "mongoose",
+   "word": "mongoose",
+   "display": "mongoose",
+   "letter": "M",
+   "pos": "noun",
+   "meaning": "A small quick animal with a long body that can fight snakes.",
+   "sentence": "The mongoose was not afraid of the cobra.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "mongrel",
    "word": "mongrel",
    "display": "mongrel",
@@ -64921,6 +66017,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "moose",
+   "word": "moose",
+   "display": "moose",
+   "letter": "M",
+   "pos": "noun",
+   "meaning": "A very large deer with wide flat antlers.",
+   "sentence": "The moose stood in the cold lake to eat plants.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "easy"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -65525,6 +66655,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "murree",
+   "word": "murree",
+   "display": "Murree",
+   "letter": "M",
+   "pos": "noun",
+   "meaning": "A hill station near Islamabad.",
+   "sentence": "It snowed in Murree in January.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -68239,6 +69403,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "oceania",
+   "word": "oceania",
+   "display": "Oceania",
+   "letter": "O",
+   "pos": "noun",
+   "meaning": "The region made up of Australia, New Zealand and the Pacific islands.",
+   "sentence": "Australia is the largest country in Oceania.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -71161,6 +72359,40 @@
    "notes": ""
   },
   {
+   "id": "panther",
+   "word": "panther",
+   "display": "panther",
+   "letter": "P",
+   "pos": "noun",
+   "meaning": "A large wild cat, often with black fur.",
+   "sentence": "The black panther hid in the dark jungle.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "pantograph",
    "word": "pantograph",
    "display": "pantograph",
@@ -73158,6 +74390,40 @@
    "notes": ""
   },
   {
+   "id": "pelican",
+   "word": "pelican",
+   "display": "pelican",
+   "letter": "P",
+   "pos": "noun",
+   "meaning": "A large water bird with a pouch under its beak.",
+   "sentence": "The pelican scooped up a fish in its pouch.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "penalize",
    "word": "penalize",
    "display": "penalize",
@@ -73303,6 +74569,40 @@
    ],
    "theme_tier": {
     "animals": "easy"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "peninsula",
+   "word": "peninsula",
+   "display": "peninsula",
+   "letter": "P",
+   "pos": "noun",
+   "meaning": "Land almost surrounded by water.",
+   "sentence": "India is on a large peninsula.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
    },
    "silent_letters": [],
    "silent_pattern": null,
@@ -75047,6 +76347,40 @@
    "notes": ""
   },
   {
+   "id": "plateau",
+   "word": "plateau",
+   "display": "plateau",
+   "letter": "P",
+   "pos": "noun",
+   "meaning": "A large area of high, flat land.",
+   "sentence": "The Deosai Plateau is very high and flat.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "platoon",
    "word": "platoon",
    "display": "platoon",
@@ -75068,6 +76402,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "platypus",
+   "word": "platypus",
+   "display": "platypus",
+   "letter": "P",
+   "pos": "noun",
+   "meaning": "An Australian animal with a duck-like bill that lays eggs.",
+   "sentence": "The platypus swims in rivers in Australia.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "hard"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -78093,6 +79461,40 @@
    "notes": ""
   },
   {
+   "id": "quail",
+   "word": "quail",
+   "display": "quail",
+   "letter": "Q",
+   "pos": "noun",
+   "meaning": "A small brown bird that lives on the ground.",
+   "sentence": "A quail ran quickly into the tall grass.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "quake",
    "word": "quake",
    "display": "quake",
@@ -79746,6 +81148,40 @@
    "notes": ""
   },
   {
+   "id": "ravi",
+   "word": "ravi",
+   "display": "Ravi",
+   "letter": "R",
+   "pos": "noun",
+   "meaning": "A river that flows past Lahore.",
+   "sentence": "The Ravi flows past the city of Lahore.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "easy"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "raw",
    "word": "raw",
    "display": "raw",
@@ -81355,6 +82791,42 @@
    "final_2025": null,
    "needs_review": false,
    "notes": ""
+  },
+  {
+   "id": "reign",
+   "word": "reign",
+   "display": "reign",
+   "letter": "R",
+   "pos": "verb",
+   "meaning": "To rule as a king or queen.",
+   "sentence": "The king will reign for many years.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "hard"
+   },
+   "silent_letters": [
+    "g"
+   ],
+   "silent_pattern": "g",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent g"
   },
   {
    "id": "reindeer",
@@ -83618,6 +85090,40 @@
    "notes": ""
   },
   {
+   "id": "river",
+   "word": "river",
+   "display": "river",
+   "letter": "R",
+   "pos": "noun",
+   "meaning": "A large natural stream of water flowing to the sea or a lake.",
+   "sentence": "The Indus is the longest river in Pakistan.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "easy"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "riyadh",
    "word": "riyadh",
    "display": "Riyadh",
@@ -83650,6 +85156,40 @@
    "final_2025": null,
    "needs_review": false,
    "notes": "Silent h at the end."
+  },
+  {
+   "id": "robin",
+   "word": "robin",
+   "display": "robin",
+   "letter": "R",
+   "pos": "noun",
+   "meaning": "A small bird with a red or orange chest.",
+   "sentence": "A robin was singing on the branch.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "easy"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
   },
   {
    "id": "rocket",
@@ -87970,6 +89510,42 @@
    "notes": ""
   },
   {
+   "id": "sialkot",
+   "word": "sialkot",
+   "display": "Sialkot",
+   "letter": "S",
+   "pos": "noun",
+   "meaning": "A city in Punjab famous for making footballs.",
+   "sentence": "Many footballs are made in Sialkot.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [
+    "l"
+   ],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "sidewalk",
    "word": "sidewalk",
    "display": "sidewalk",
@@ -88004,6 +89580,42 @@
    "final_2025": null,
    "needs_review": false,
    "notes": ""
+  },
+  {
+   "id": "sigh",
+   "word": "sigh",
+   "display": "sigh",
+   "letter": "S",
+   "pos": "verb",
+   "meaning": "To let out a long, deep breath when tired or sad.",
+   "sentence": "She gave a sigh when the bell rang.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "easy"
+   },
+   "silent_letters": [
+    "gh"
+   ],
+   "silent_pattern": "gh",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent gh"
   },
   {
    "id": "sightseeing",
@@ -88387,6 +89999,40 @@
    "notes": ""
   },
   {
+   "id": "skardu",
+   "word": "skardu",
+   "display": "Skardu",
+   "letter": "S",
+   "pos": "noun",
+   "meaning": "A town in Gilgit-Baltistan surrounded by high mountains.",
+   "sentence": "We flew to Skardu to see the mountains.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "skeleton",
    "word": "skeleton",
    "display": "skeleton",
@@ -88468,6 +90114,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "skunk",
+   "word": "skunk",
+   "display": "skunk",
+   "letter": "S",
+   "pos": "noun",
+   "meaning": "A black and white animal that sprays a bad smell.",
+   "sentence": "The skunk lifted its tail and the dog ran away.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -88570,6 +90250,40 @@
    "in_az": false,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "sloth",
+   "word": "sloth",
+   "display": "sloth",
+   "letter": "S",
+   "pos": "noun",
+   "meaning": "A slow animal that hangs upside down in trees.",
+   "sentence": "The sloth moved very slowly along the branch.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "easy"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -89353,6 +91067,42 @@
    "notes": ""
   },
   {
+   "id": "solemn",
+   "word": "solemn",
+   "display": "solemn",
+   "letter": "S",
+   "pos": "adjective",
+   "meaning": "Serious and not cheerful.",
+   "sentence": "Everyone was quiet at the solemn ceremony.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "hard"
+   },
+   "silent_letters": [
+    "n"
+   ],
+   "silent_pattern": "dsnp",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent n"
+  },
+  {
    "id": "solitary",
    "word": "solitary",
    "display": "solitary",
@@ -89708,6 +91458,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "southafrica",
+   "word": "south africa",
+   "display": "South Africa",
+   "letter": "S",
+   "pos": "noun",
+   "meaning": "A country at the southern tip of Africa.",
+   "sentence": "Cape Town is a city in South Africa.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "easy"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -91329,6 +93113,40 @@
    "notes": ""
   },
   {
+   "id": "stork",
+   "word": "stork",
+   "display": "stork",
+   "letter": "S",
+   "pos": "noun",
+   "meaning": "A tall bird with long legs and a long beak.",
+   "sentence": "A stork built its nest on top of the tower.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "stouthearted",
    "word": "stouthearted",
    "display": "stouthearted",
@@ -92550,6 +94368,40 @@
    "notes": ""
   },
   {
+   "id": "sutlej",
+   "word": "sutlej",
+   "display": "Sutlej",
+   "letter": "S",
+   "pos": "noun",
+   "meaning": "One of the five rivers of Punjab.",
+   "sentence": "The Sutlej flows into Pakistan from India.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "swallow",
    "word": "swallow",
    "display": "swallow",
@@ -92604,6 +94456,40 @@
    ],
    "theme_tier": {
     "animals": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "swat",
+   "word": "swat",
+   "display": "Swat",
+   "letter": "S",
+   "pos": "noun",
+   "meaning": "A green valley in the north of Pakistan.",
+   "sentence": "We saw snowy mountains in Swat.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "easy"
    },
    "silent_letters": [],
    "silent_pattern": null,
@@ -93510,6 +95396,40 @@
    "notes": ""
   },
   {
+   "id": "tarbela",
+   "word": "tarbela",
+   "display": "Tarbela",
+   "letter": "T",
+   "pos": "noun",
+   "meaning": "A very large dam on the Indus river.",
+   "sentence": "Tarbela Dam stores water from the Indus.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "target",
    "word": "target",
    "display": "target",
@@ -93629,6 +95549,42 @@
    "final_2025": null,
    "needs_review": false,
    "notes": ""
+  },
+  {
+   "id": "taught",
+   "word": "taught",
+   "display": "taught",
+   "letter": "T",
+   "pos": "verb",
+   "meaning": "Past of teach.",
+   "sentence": "My mother taught me to read.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "gh"
+   ],
+   "silent_pattern": "gh",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent gh"
   },
   {
    "id": "tauntingly",
@@ -94423,6 +96379,42 @@
    "notes": ""
   },
   {
+   "id": "thigh",
+   "word": "thigh",
+   "display": "thigh",
+   "letter": "T",
+   "pos": "noun",
+   "meaning": "The top part of the leg, above the knee.",
+   "sentence": "He hurt his thigh while running.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "gh"
+   ],
+   "silent_pattern": "gh",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent gh"
+  },
+  {
    "id": "think",
    "word": "think",
    "display": "think",
@@ -94481,6 +96473,42 @@
    "final_2025": null,
    "needs_review": false,
    "notes": ""
+  },
+  {
+   "id": "thought",
+   "word": "thought",
+   "display": "thought",
+   "letter": "T",
+   "pos": "verb",
+   "meaning": "Past of think.",
+   "sentence": "I thought the test was easy.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "gh"
+   ],
+   "silent_pattern": "gh",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent gh"
   },
   {
    "id": "thousand",
@@ -94571,6 +96599,42 @@
    "final_2025": null,
    "needs_review": false,
    "notes": ""
+  },
+  {
+   "id": "through",
+   "word": "through",
+   "display": "through",
+   "letter": "T",
+   "pos": "preposition",
+   "meaning": "In one side and out of the other.",
+   "sentence": "The train went through a long tunnel.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "gh"
+   ],
+   "silent_pattern": "gh",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent gh"
   },
   {
    "id": "thumb",
@@ -94921,6 +96985,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "toad",
+   "word": "toad",
+   "display": "toad",
+   "letter": "T",
+   "pos": "noun",
+   "meaning": "An animal like a frog with dry, bumpy skin.",
+   "sentence": "A fat brown toad hopped across the garden path.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "easy"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -95358,6 +97456,40 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "toucan",
+   "word": "toucan",
+   "display": "toucan",
+   "letter": "T",
+   "pos": "noun",
+   "meaning": "A tropical bird with a very large, bright beak.",
+   "sentence": "The toucan has a huge orange beak.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -96569,6 +98701,40 @@
    "notes": ""
   },
   {
+   "id": "uganda",
+   "word": "uganda",
+   "display": "Uganda",
+   "letter": "U",
+   "pos": "noun",
+   "meaning": "A country in East Africa.",
+   "sentence": "Uganda is in East Africa.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "ugly",
    "word": "ugly",
    "display": "ugly",
@@ -97469,6 +99635,108 @@
    "in_az": true,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "unitedarabemirates",
+   "word": "united arab emirates",
+   "display": "United Arab Emirates",
+   "letter": "U",
+   "pos": "noun",
+   "meaning": "A country in the Middle East. Dubai is one of its cities.",
+   "sentence": "Dubai is a city in the United Arab Emirates.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "hard"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "unitedkingdom",
+   "word": "united kingdom",
+   "display": "United Kingdom",
+   "letter": "U",
+   "pos": "noun",
+   "meaning": "A country made up of England, Scotland, Wales and Northern Ireland.",
+   "sentence": "London is the capital of the United Kingdom.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "unitedstates",
+   "word": "united states",
+   "display": "United States",
+   "letter": "U",
+   "pos": "noun",
+   "meaning": "A large country in North America; also called America.",
+   "sentence": "Washington is the capital of the United States.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -99947,6 +102215,40 @@
    "notes": ""
   },
   {
+   "id": "volcano",
+   "word": "volcano",
+   "display": "volcano",
+   "letter": "V",
+   "pos": "noun",
+   "meaning": "A mountain that can throw out hot melted rock and ash.",
+   "sentence": "Smoke came out of the top of the volcano.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "volleyball",
    "word": "volleyball",
    "display": "volleyball",
@@ -100631,6 +102933,40 @@
    "notes": ""
   },
   {
+   "id": "wasp",
+   "word": "wasp",
+   "display": "wasp",
+   "letter": "W",
+   "pos": "noun",
+   "meaning": "A flying insect with yellow and black stripes that can sting.",
+   "sentence": "Be careful, a wasp is buzzing near the jam.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 1,
+   "level": "easy",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "easy"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "waste",
    "word": "waste",
    "display": "waste",
@@ -100690,6 +103026,40 @@
     "t"
    ],
    "silent_pattern": "t",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "waterfall",
+   "word": "waterfall",
+   "display": "waterfall",
+   "letter": "W",
+   "pos": "noun",
+   "meaning": "A place where a river falls from a high place.",
+   "sentence": "We took a photo near the waterfall.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "geography"
+   ],
+   "theme_tier": {
+    "geography": "medium"
+   },
+   "silent_letters": [],
+   "silent_pattern": null,
    "sound_alike_with": [],
    "spelling_note": "",
    "final_2025": null,
@@ -101071,6 +103441,42 @@
    "notes": ""
   },
   {
+   "id": "weigh",
+   "word": "weigh",
+   "display": "weigh",
+   "letter": "W",
+   "pos": "verb",
+   "meaning": "To find out how heavy something is.",
+   "sentence": "We weigh the apples on the scale.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "gh"
+   ],
+   "silent_pattern": "gh",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent gh"
+  },
+  {
    "id": "welcome",
    "word": "welcome",
    "display": "welcome",
@@ -101407,6 +103813,42 @@
    "notes": ""
   },
   {
+   "id": "whom",
+   "word": "whom",
+   "display": "whom",
+   "letter": "W",
+   "pos": "pronoun",
+   "meaning": "Which person (used after words like to, with, for).",
+   "sentence": "To whom did you give the book?",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "easy"
+   },
+   "silent_letters": [
+    "w"
+   ],
+   "silent_pattern": "w",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent w"
+  },
+  {
    "id": "window",
    "word": "window",
    "display": "window",
@@ -101622,6 +104064,40 @@
    "in_az": false,
    "themes": [],
    "theme_tier": {},
+   "silent_letters": [],
+   "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "woodpecker",
+   "word": "woodpecker",
+   "display": "woodpecker",
+   "letter": "W",
+   "pos": "noun",
+   "meaning": "A bird that pecks holes in trees with its strong beak.",
+   "sentence": "We heard a woodpecker tapping on the tree.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 3,
+   "level": "hard",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "animals"
+   ],
+   "theme_tier": {
+    "animals": "hard"
+   },
    "silent_letters": [],
    "silent_pattern": null,
    "sound_alike_with": [],
@@ -102089,6 +104565,42 @@
    "final_2025": null,
    "needs_review": false,
    "notes": ""
+  },
+  {
+   "id": "wrench",
+   "word": "wrench",
+   "display": "wrench",
+   "letter": "W",
+   "pos": "noun",
+   "meaning": "A tool for turning nuts and bolts.",
+   "sentence": "The plumber used a wrench to fix the pipe.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "added_by_parent",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "w"
+   ],
+   "silent_pattern": "w",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": "silent w"
   },
   {
    "id": "wrestle",

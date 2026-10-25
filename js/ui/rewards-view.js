@@ -8,6 +8,7 @@
   function R() { return App.state.rewards; }
   function sticker(id) { return K.BY_ID[id]; }
   function face(s) { return UI.glyph(s.emoji, s.alt); }
+  function dollView(slot, size) { return { size: size, view: UI.dollView(slot), backdrop: slot === 'backdrop' }; }
   function rarityLabel(r) { return r === 'legendary' ? '🌟 Legendary' : r === 'rare' ? '✨ Rare' : 'Common'; }
   function canSpeak() { return UI.speech.mode() !== 'parent'; }
 
@@ -55,9 +56,11 @@
   // ---------- pack opening / surprise box ----------
   var overlay = null;
   function closeOverlay() { if (overlay) { overlay.remove(); overlay = null; } }
+  // An overlay that is no longer on the page (closed some other way) doesn't count as open.
+  function overlayOpen() { if (overlay && !overlay.isConnected) overlay = null; return !!overlay; }
 
   function openPending(item) {
-    if (overlay || document.querySelector('.modal-back')) return;
+    if (overlayOpen() || document.querySelector('.modal-back')) return;
     var reduced = UI.reducedMotion();
     var cards = item.stickers.map(function (id, i) {
       var s = sticker(id);
@@ -70,12 +73,24 @@
             h('span.flip-emoji', face(s)), h('span.flip-name', s.name), h('span.flip-rarity', rarityLabel(s.rarity)))));
       return card;
     }).filter(Boolean);
-    var done = h('button.btn.big.primary', { type: 'button' }, 'Put them in my book 📒');
+    // A wardrobe gift for the dress-up doll comes with packs.
+    var gift = item.dress && GF.dress.BY_ID[item.dress];
+    if (gift) {
+      cards.push(h('div.flip.gift' + (reduced ? '.flipped' : ''),
+        h('div.flip-inner',
+          h('div.flip-face.flip-back', { 'aria-hidden': 'true' }, '👗'),
+          h('div.flip-face.flip-front.r-rare',
+            h('span.new-ribbon', 'NEW!'),
+            h('span.flip-doll', UI.doll.svg(GF.dress.tryOn(App.state.dress.look, gift.id), dollView(gift.slot, 'tile'))),
+            h('span.flip-name', gift.name), h('span.flip-rarity', 'For your doll')))));
+    }
+    var done = h('button.btn.big' + (gift ? '' : '.primary'), { type: 'button' }, gift ? 'Keep them' : 'Put them in my book 📒');
+    var wearNow = gift ? h('button.btn.big.primary', { type: 'button' }, 'Wear it now 👗') : null;
     var box = h('div.modal.pack-modal', { role: 'dialog', 'aria-modal': 'true', 'aria-label': item.type === 'box' ? 'Surprise box' : 'Sticker pack' },
       h('h2.center', item.type === 'box' ? '🎁 Surprise box!' : '🎉 Sticker pack!'),
       item.reason ? h('p.center.muted', 'For ' + item.reason + '.') : null,
       h('div.pack-cards', cards),
-      h('div.row.center', done));
+      h('div.row.center', done, wearNow));
     overlay = h('div.modal-back.pack-back', box);
     document.body.appendChild(overlay);
     UI.sounds.sticker();
@@ -90,18 +105,25 @@
       });
     }
     var names = item.stickers.map(function (id) { return sticker(id) ? sticker(id).name : ''; }).filter(Boolean);
+    if (gift) names.push('and ' + gift.name + ' for your doll');
     if (canSpeak()) setTimeout(function () { UI.speech.say(names.join('! ') + '!'); }, reduced ? 0 : 500);
-    var finish = function () {
+    var closed = false;
+    var finish = function (wear) {
+      if (closed) return;
+      closed = true;
       K.open(R(), item.id);
+      if (wear && gift) GF.dress.wear(App.state.dress, gift.id);
       App.save();
       closeOverlay();
       document.removeEventListener('keydown', onKey, true);
-      App.rerender();
+      if (wear && gift) App.go('dress', { slot: gift.slot });
+      else App.rerender();
     };
-    var onKey = function (e) { if (e.key === 'Escape' || e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); finish(); } };
+    var onKey = function (e) { if (e.key === 'Escape' || e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); finish(false); } };
     document.addEventListener('keydown', onKey, true);
-    done.addEventListener('click', finish);
-    setTimeout(function () { try { done.focus({ preventScroll: true }); } catch (e) { /* ignore */ } }, 30);
+    done.addEventListener('click', function () { finish(false); });
+    if (wearNow) wearNow.addEventListener('click', function () { finish(true); });
+    setTimeout(function () { try { (wearNow || done).focus({ preventScroll: true }); } catch (e) { /* ignore */ } }, 30);
   }
 
   // ---------- brain break ----------
@@ -156,7 +178,7 @@
 
   // After every screen draw with no question showing: open a waiting pack, else offer a brain break.
   function afterRender(screen) {
-    if (overlay || document.querySelector('.modal-back')) return;
+    if (overlayOpen() || document.querySelector('.modal-back')) return;
     var pack = R().pending.filter(function (p) { return p.type === 'pack'; })[0];
     if (pack) { setTimeout(function () { openPending(pack); }, 350); return; }
     var st = App.state;
@@ -228,11 +250,15 @@
   function boardPage(root, r) {
     var themes = K.unlockedThemes(r), cur = K.theme(r);
     root.appendChild(h('section.panel', h('h2', '🎨 Board theme'),
+      h('p.muted', 'Your theme becomes the background of the whole app and the colours of the board game.' + (App.state.settings.themeBg === false ? ' (A grown-up has turned the background off in Settings.)' : '')),
       h('div.choices', K.THEMES.map(function (t) {
         var open = themes.indexOf(t) >= 0;
         return h('button.choice.theme-pick' + (t.id === cur.id ? '.on' : ''), {
           type: 'button', disabled: !open, 'aria-pressed': String(t.id === cur.id),
-          onclick: function () { r.boardTheme = t.id; App.save(); App.rerender(); }
+          onclick: function () {
+            r.boardTheme = t.id; App.save(); App.rerender();
+            UI.toast(t.id === 'classic' ? 'Classic look: plain background' : t.label + ' is now your background and your board!');
+          }
         }, h('span.choice-emoji', open ? t.goal : '🔒'), h('span.choice-name', t.label),
           h('span.choice-sub', open ? (t.id === cur.id ? 'In use' : 'Tap to use') : 'Complete a pack to unlock'));
       }))));
@@ -269,7 +295,10 @@
           }, h('span.slot-emoji', face(s)), h('span.slot-name', s.name), h('span.slot-count', K.SHOP_PRICE + ' ⭐'));
         }))));
     });
-    if (K.unique(r) === K.ALL.length) root.appendChild(h('p.sticker-won', 'You have every sticker! 🎉'));
+    if (K.unique(r) === K.ALL.length) {
+      root.appendChild(h('p.sticker-won', 'You have every sticker! 🎉'));
+      root.appendChild(h('div.row.center', h('button.btn.big.primary', { type: 'button', onclick: function () { App.go('dress'); } }, '👗 Spend your stars in the Dress-up studio')));
+    }
   };
 
   function buy(s) {

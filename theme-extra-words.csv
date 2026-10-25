@@ -1,0 +1,74 @@
+﻿word,pos,meaning,sentence,themes,theme_tier,difficulty,notes
+crow,noun,A large black bird with a loud harsh call.,A crow sat on the wall and cawed loudly.,animals,animals:easy,,
+dove,noun,A gentle grey or white bird; a sign of peace.,A white dove flew over the school roof.,animals,animals:easy,,
+toad,noun,"An animal like a frog with dry, bumpy skin.",A fat brown toad hopped across the garden path.,animals,animals:easy,,
+wasp,noun,A flying insect with yellow and black stripes that can sting.,"Be careful, a wasp is buzzing near the jam.",animals,animals:easy,,
+robin,noun,A small bird with a red or orange chest.,A robin was singing on the branch.,animals,animals:easy,,
+moose,noun,A very large deer with wide flat antlers.,The moose stood in the cold lake to eat plants.,animals,animals:easy,,
+sloth,noun,A slow animal that hangs upside down in trees.,The sloth moved very slowly along the branch.,animals,animals:easy,,
+stork,noun,A tall bird with long legs and a long beak.,A stork built its nest on top of the tower.,animals,animals:medium,,
+crane,noun,A tall bird with long legs and a long neck.,The crane stood on one leg in the water.,animals,animals:medium,,
+bison,noun,"A large wild animal like a cow, with a hump and shaggy hair.",A herd of bison ran across the grassland.,animals,animals:medium,,
+skunk,noun,A black and white animal that sprays a bad smell.,The skunk lifted its tail and the dog ran away.,animals,animals:medium,,
+hamster,noun,A small furry pet that stores food in its cheeks.,My hamster runs on its wheel all night.,animals,animals:medium,,
+pelican,noun,A large water bird with a pouch under its beak.,The pelican scooped up a fish in its pouch.,animals,animals:medium,,
+toucan,noun,"A tropical bird with a very large, bright beak.",The toucan has a huge orange beak.,animals,animals:medium,,
+panther,noun,"A large wild cat, often with black fur.",The black panther hid in the dark jungle.,animals,animals:medium,,
+magpie,noun,A black and white bird with a long tail.,The magpie picked up a shiny button.,animals,animals:medium,,
+quail,noun,A small brown bird that lives on the ground.,A quail ran quickly into the tall grass.,animals,animals:medium,,
+meerkat,noun,A small African animal that stands up on its back legs to look around.,The meerkat stood up to watch for danger.,animals,animals:medium,,
+woodpecker,noun,A bird that pecks holes in trees with its strong beak.,We heard a woodpecker tapping on the tree.,animals,animals:hard,,
+mongoose,noun,A small quick animal with a long body that can fight snakes.,The mongoose was not afraid of the cobra.,animals,animals:hard,,
+kingfisher,noun,A small bright blue bird that dives into water to catch fish.,The kingfisher dived into the river.,animals,animals:hard,,
+platypus,noun,An Australian animal with a duck-like bill that lays eggs.,The platypus swims in rivers in Australia.,animals,animals:hard,,
+armadillo,noun,An animal covered in hard plates that can roll into a ball.,The armadillo rolled into a tight ball.,animals,animals:hard,,
+river,noun,A large natural stream of water flowing to the sea or a lake.,The Indus is the longest river in Pakistan.,geography,geography:easy,,
+country,noun,A land with its own government and people.,Pakistan is my country.,geography,geography:easy,,
+Swat,noun,A green valley in the north of Pakistan.,We saw snowy mountains in Swat.,geography,geography:easy,,
+Hunza,noun,"A beautiful valley in Gilgit-Baltistan, Pakistan.",Hunza is famous for its apricots.,geography,geography:easy,,
+Ravi,noun,A river that flows past Lahore.,The Ravi flows past the city of Lahore.,geography,geography:easy,,
+South Africa,noun,A country at the southern tip of Africa.,Cape Town is a city in South Africa.,geography,geography:easy,,
+continent,noun,One of the seven very large areas of land on Earth.,Asia is the biggest continent.,geography,geography:medium,,
+capital,noun,The city where a country's government is.,Islamabad is the capital of Pakistan.,geography,geography:medium,,
+volcano,noun,A mountain that can throw out hot melted rock and ash.,Smoke came out of the top of the volcano.,geography,geography:medium,,
+equator,noun,An imaginary line around the middle of the Earth.,Countries near the equator are hot.,geography,geography:medium,,
+glacier,noun,"A huge, slow-moving river of ice.",The Baltoro Glacier is in northern Pakistan.,geography,geography:medium,,
+waterfall,noun,A place where a river falls from a high place.,We took a photo near the waterfall.,geography,geography:medium,,
+Gwadar,noun,A port city on the coast of Balochistan.,Ships come to the port of Gwadar.,geography,geography:medium,,
+Sialkot,noun,A city in Punjab famous for making footballs.,Many footballs are made in Sialkot.,geography,geography:medium,,
+Murree,noun,A hill station near Islamabad.,It snowed in Murree in January.,geography,geography:medium,,
+Skardu,noun,A town in Gilgit-Baltistan surrounded by high mountains.,We flew to Skardu to see the mountains.,geography,geography:medium,,
+Chitral,noun,A valley and town in the north of Khyber Pakhtunkhwa.,Chitral is close to the Hindu Kush mountains.,geography,geography:medium,,
+Chenab,noun,One of the five rivers of Punjab.,The Jhelum river flows into the Chenab.,geography,geography:medium,,
+Jhelum,noun,A river and a city in Punjab.,We crossed the Jhelum on a long bridge.,geography,geography:medium,,
+Sutlej,noun,One of the five rivers of Punjab.,The Sutlej flows into Pakistan from India.,geography,geography:medium,,
+United Kingdom,noun,"A country made up of England, Scotland, Wales and Northern Ireland.",London is the capital of the United Kingdom.,geography,geography:medium,,
+United States,noun,A large country in North America; also called America.,Washington is the capital of the United States.,geography,geography:medium,,
+plateau,noun,"A large area of high, flat land.",The Deosai Plateau is very high and flat.,geography,geography:hard,,
+peninsula,noun,Land almost surrounded by water.,India is on a large peninsula.,geography,geography:hard,,
+Khyber Pakhtunkhwa,noun,A province in the north-west of Pakistan. Its capital is Peshawar.,Peshawar is the capital of Khyber Pakhtunkhwa.,geography,geography:hard,,
+Abbottabad,noun,"A city in Khyber Pakhtunkhwa, Pakistan.","Abbottabad is a cool, green city.",geography,geography:hard,,
+Bahawalpur,noun,"A city in the south of Punjab, near the Cholistan desert.",We visited Noor Mahal in Bahawalpur.,geography,geography:hard,,
+Gujranwala,noun,A large city in Punjab.,Gujranwala is famous for its food.,geography,geography:hard,,
+Tarbela,noun,A very large dam on the Indus river.,Tarbela Dam stores water from the Indus.,geography,geography:hard,,
+United Arab Emirates,noun,A country in the Middle East. Dubai is one of its cities.,Dubai is a city in the United Arab Emirates.,geography,geography:hard,,
+Oceania,noun,"The region made up of Australia, New Zealand and the Pacific islands.",Australia is the largest country in Oceania.,geography,geography:hard,,
+Jamaica,noun,An island country in the Caribbean Sea.,Jamaica is an island in the Caribbean.,geography,geography:hard,,
+Uganda,noun,A country in East Africa.,Uganda is in East Africa.,geography,geography:hard,,
+Algeria,noun,"The largest country in Africa, in the north.",Algeria is the biggest country in Africa.,geography,geography:hard,,
+Libya,noun,A country in North Africa with a lot of desert.,Most of Libya is desert.,geography,geography:hard,,
+Fiji,noun,An island country in the Pacific Ocean. Its capital is Suva.,Fiji is made up of more than 300 islands.,geography,geography:hard,,
+bomb,noun,A weapon that explodes.,The old bomb was found and made safe.,silent_letter,silent_letter:easy,,silent b
+sigh,verb,"To let out a long, deep breath when tired or sad.",She gave a sigh when the bell rang.,silent_letter,silent_letter:easy,,silent gh
+whom,pronoun,"Which person (used after words like to, with, for).",To whom did you give the book?,silent_letter,silent_letter:easy,,silent w
+weigh,verb,To find out how heavy something is.,We weigh the apples on the scale.,silent_letter,silent_letter:medium,,silent gh
+thigh,noun,"The top part of the leg, above the knee.",He hurt his thigh while running.,silent_letter,silent_letter:medium,,silent gh
+caught,verb,Past of catch.,Ali caught the ball with one hand.,silent_letter,silent_letter:medium,,silent gh
+taught,verb,Past of teach.,My mother taught me to read.,silent_letter,silent_letter:medium,,silent gh
+bought,verb,Past of buy.,We bought fresh mangoes from the market.,silent_letter,silent_letter:medium,,silent gh
+fought,verb,Past of fight.,The two cats fought over the fish.,silent_letter,silent_letter:medium,,silent gh
+thought,verb,Past of think.,I thought the test was easy.,silent_letter,silent_letter:medium,,silent gh
+through,preposition,In one side and out of the other.,The train went through a long tunnel.,silent_letter,silent_letter:medium,,silent gh
+wrench,noun,A tool for turning nuts and bolts.,The plumber used a wrench to fix the pipe.,silent_letter,silent_letter:medium,,silent w
+reign,verb,To rule as a king or queen.,The king will reign for many years.,silent_letter,silent_letter:hard,,silent g
+solemn,adjective,Serious and not cheerful.,Everyone was quiet at the solemn ceremony.,silent_letter,silent_letter:hard,,silent n

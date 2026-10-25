@@ -167,6 +167,8 @@
       field('Sound-alike badge', select([['true', 'On'], ['false', 'Off']], String(s.soundAlike), function (v) { set('soundAlike', v === 'true'); })),
       field('Sound effects', select([['true', 'On'], ['false', 'Off']], String(s.sfx), function (v) { set('sfx', v === 'true'); UI.sounds.setEnabled(s.sfx); })),
       field('Brain break after 20 minutes', select([['true', 'On'], ['false', 'Off']], String(s.brainBreak), function (v) { set('brainBreak', v === 'true'); }), 'A one-minute stretch. You can always skip it.'),
+      field('Theme background', select([['true', 'On'], ['false', 'Off']], String(s.themeBg !== false), function (v) { set('themeBg', v === 'true'); App.rerender(); }),
+        'Shows the board theme she picked in the sticker book behind the whole app.'),
       field('The owl says a cheer', select([['true', 'Every few right answers'], ['false', 'Off']], String(s.cheerVoice), function (v) { set('cheerVoice', v === 'true'); }))));
 
     var a = st.az;
@@ -635,7 +637,7 @@
           'Saved: ' + (s.savedAt ? new Date(s.savedAt).toLocaleString() : 'unknown'),
           'Player: ' + s.avatar + ' ' + s.name,
           'Progress for ' + s.words + ' words · ' + s.mocks + ' Mock Finals · ' + s.added + ' added, ' + s.edited + ' edited, ' + s.hidden + ' hidden words.',
-          s.stickers + ' different stickers · ' + s.azDone + ' words done in A–Z.',
+          s.stickers + ' different stickers · ' + s.azDone + ' words done in A–Z · ' + (s.dressItems || 0) + ' dress-up items.',
           'This REPLACES everything in this browser now (progress, plan, settings, word changes and mock history) with the backup. A copy of the current data is kept in this browser first.'
         ], 'Replace with backup', true).then(function (ok) {
           if (!ok) return;
@@ -765,11 +767,11 @@
       {
         label: 'Clear practice progress', title: 'Clear practice progress?',
         lines: ['This deletes: progress for ' + nWords + ' words (mastered, missed, reviews), the answer log for strategy tips, the day streak, the A–Z progress, the sticker book (' +
-          GF.stickers.total(st.rewards) + ' stickers, ' + st.rewards.stars + ' stars, badges and trophies), and any game in progress.',
+          GF.stickers.total(st.rewards) + ' stickers, ' + st.rewards.stars + ' stars, badges and trophies), the dress-up wardrobe (' + GF.dress.counts(st.dress).owned + ' items), and any game in progress.',
           'This keeps: the study plan, settings, your word changes, and the Mock history.'],
         run: function () {
           st.progress = {}; st.log = []; st.activity = {}; st.profile.stickers = 0; st.sessions = {};
-          st.rewards = GF.stickers.blank(); st.az.w = {}; st.az.last = null;
+          st.rewards = GF.stickers.blank(); st.az.w = {}; st.az.last = null; st.dress = GF.dress.blank();
         }
       },
       {

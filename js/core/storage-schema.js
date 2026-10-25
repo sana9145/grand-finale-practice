@@ -16,7 +16,7 @@
     return {
       finalDate: null, dailyGoal: 40, judge: 'parent', timer: 'rules', timerCustom: 30, timeUp: 'show',
       mockUses: 'plan', mockR2: 'focus911', boardLength: 20, boardWrong: 'back', showText: true, soundAlike: true, zName: 'zed',
-      voiceURI: null, rate: 0.85, pitch: 1, sfx: true, speech: 'auto', brainBreak: true, cheerVoice: true
+      voiceURI: null, rate: 0.85, pitch: 1, sfx: true, speech: 'auto', brainBreak: true, cheerVoice: true, themeBg: true
     };
   }
 
@@ -49,6 +49,8 @@
       overlay: { added: [], edited: {}, hidden: [] },
       az: defaultAz(),
       rewards: dep('stickers', './stickers.js').blank(),
+      // The dress-up doll. Added without changing schemaVersion: older copies of the app ignore it.
+      dress: dep('dress', './dress.js').blank(),
       backup: { lastAt: null, answersSince: 0, remindAfter: now },
       sessions: {},
       ui: { screen: 'home', params: {} }
@@ -75,6 +77,7 @@
     if (s.profile !== undefined && !isObj(s.profile)) e.push('profile is not an object');
     if (s.az !== undefined && s.az !== null && !isObj(s.az)) e.push('az is not an object');
     if (s.rewards !== undefined && s.rewards !== null && !isObj(s.rewards)) e.push('rewards is not an object');
+    if (s.dress !== undefined && s.dress !== null && !isObj(s.dress)) e.push('dress is not an object');
     return e;
   }
 
@@ -93,6 +96,7 @@
     out.legacyHistory = Array.isArray(s.legacyHistory) ? s.legacyHistory : [];
     out.az = normalizeAz(s.az);
     out.rewards = dep('stickers', './stickers.js').normalize(s.rewards);
+    out.dress = dep('dress', './dress.js').normalize(s.dress);
     out.sessions = isObj(s.sessions) ? s.sessions : {};
     out.ui = isObj(s.ui) ? s.ui : d.ui;
     return out;
@@ -137,7 +141,7 @@
       settings: state.settings, plan: state.plan, profile: state.profile, progress: state.progress,
       mockHistory: state.mockHistory, overlay: state.overlay,
       log: state.log, activity: state.activity, legacyHistory: state.legacyHistory,
-      az: state.az, rewards: state.rewards
+      az: state.az, rewards: state.rewards, dress: state.dress
     };
   }
 
@@ -155,6 +159,7 @@
     };
     if (b.az !== undefined) s.az = b.az;
     if (b.rewards !== undefined) s.rewards = b.rewards;
+    if (b.dress !== undefined) s.dress = b.dress;
     try { s = dep('migrations', './migrations.js').migrate(s); }
     catch (e) { return { ok: false, error: e.message }; }
     var errs = validate(s);
@@ -169,7 +174,8 @@
         savedAt: b.savedAt, name: state.profile.name, avatar: state.profile.avatar,
         words: Object.keys(state.progress).length, mocks: state.mockHistory.length,
         added: o.added.length, edited: Object.keys(o.edited).length, hidden: o.hidden.length,
-        stickers: dep('stickers', './stickers.js').unique(state.rewards), azDone: Object.keys(state.az.w).filter(function (id) { return state.az.w[id] === 'd'; }).length
+        stickers: dep('stickers', './stickers.js').unique(state.rewards), azDone: Object.keys(state.az.w).filter(function (id) { return state.az.w[id] === 'd'; }).length,
+        dressItems: dep('dress', './dress.js').counts(state.dress).owned
       }
     };
   }

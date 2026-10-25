@@ -565,3 +565,89 @@ li.diff { margin: 10px 0; }
   .book-tabs .tab { flex: none; white-space: nowrap; }
 }
 @media (max-width: 420px) { .topbar .btn.icon.stars-btn { padding: 0 8px; font-size: 18px; } .top-actions { gap: 6px; } }
+
+/* ======================================================================
+   Update 3: theme background, dress-up studio, golden word
+   ====================================================================== */
+
+/* ---- the board theme as the app background ---- */
+.bg-layer { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; display: none;
+  --bgA: #fff8ec; --bgB: #fdeccd; background: linear-gradient(160deg, var(--bgA), var(--bgB)); }
+.bg-layer.on { display: block; }
+.bg-layer span { position: absolute; opacity: 0.2; line-height: 1; transform: translate(-50%, -50%); animation: bg-float 9s ease-in-out infinite; }
+@keyframes bg-float { 0%, 100% { transform: translate(-50%, -50%); } 50% { transform: translate(-50%, calc(-50% - 10px)) rotate(6deg); } }
+.bg-crafts { --bgA: #fff0f7; --bgB: #f6e3f0; }
+.bg-candy { --bgA: #fff0f6; --bgB: #ffd6e8; }
+.bg-park { --bgA: #f3faea; --bgB: #dff0c8; }
+.bg-ocean { --bgA: #eef8ff; --bgB: #cfe9fb; }
+.bg-garden { --bgA: #f4fbef; --bgB: #fff3c4; }
+.bg-space { --bgA: #eeeaff; --bgB: #d9e2ff; }
+.bg-magic { --bgA: #f6f0ff; --bgB: #e6d7ff; }
+.bg-funfair { --bgA: #fff7e8; --bgB: #ffe2b8; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .bg-crafts { --bgA: #24182a; --bgB: #3a1f35; }
+  :root:not([data-theme="light"]) .bg-candy { --bgA: #2a1622; --bgB: #3d1a2f; }
+  :root:not([data-theme="light"]) .bg-park { --bgA: #16231a; --bgB: #1f3322; }
+  :root:not([data-theme="light"]) .bg-ocean { --bgA: #111f2e; --bgB: #14304a; }
+  :root:not([data-theme="light"]) .bg-garden { --bgA: #18241a; --bgB: #2e2a14; }
+  :root:not([data-theme="light"]) .bg-space { --bgA: #0e0f2a; --bgB: #1d1648; }
+  :root:not([data-theme="light"]) .bg-magic { --bgA: #1d1430; --bgB: #2c1a4a; }
+  :root:not([data-theme="light"]) .bg-funfair { --bgA: #2a1c10; --bgB: #3a2610; }
+  :root:not([data-theme="light"]) .bg-layer span { opacity: 0.16; }
+}
+:root[data-theme="dark"] .bg-crafts { --bgA: #24182a; --bgB: #3a1f35; }
+:root[data-theme="dark"] .bg-candy { --bgA: #2a1622; --bgB: #3d1a2f; }
+:root[data-theme="dark"] .bg-park { --bgA: #16231a; --bgB: #1f3322; }
+:root[data-theme="dark"] .bg-ocean { --bgA: #111f2e; --bgB: #14304a; }
+:root[data-theme="dark"] .bg-garden { --bgA: #18241a; --bgB: #2e2a14; }
+:root[data-theme="dark"] .bg-space { --bgA: #0e0f2a; --bgB: #1d1648; }
+:root[data-theme="dark"] .bg-magic { --bgA: #1d1430; --bgB: #2c1a4a; }
+:root[data-theme="dark"] .bg-funfair { --bgA: #2a1c10; --bgB: #3a2610; }
+/* with a background picture, the page itself stays see-through */
+html.has-bg body { background: transparent; }
+html.has-bg { background: var(--bg); }
+@media print { .bg-layer { display: none !important; } }
+
+/* ---- golden word ---- */
+.chip.golden { background: var(--gold-soft); border: 2px solid var(--gold); font-weight: 800; }
+
+/* ---- home tile with the doll ---- */
+.mode.dress-mode { grid-template-columns: 64px 1fr; }
+.mode-doll { grid-row: 1 / 3; width: 64px; height: 72px; display: flex; align-items: center; justify-content: center; }
+.mode-doll .doll { width: 64px; height: 72px; }
+
+/* ---- the studio ---- */
+.dress-layout { display: grid; grid-template-columns: 1fr; gap: 14px; align-items: start; }
+@media (min-width: 860px) { .dress-layout { grid-template-columns: minmax(280px, 360px) minmax(0, 1fr); } .dress-left { position: sticky; top: 84px; } }
+.dress-left, .dress-right { min-width: 0; }
+.dress-stage { display: flex; justify-content: center; }
+.doll-big { width: 100%; max-width: 300px; height: auto; aspect-ratio: 2 / 3; display: block; border-radius: 16px; box-shadow: var(--shadow); }
+@media (max-width: 859px) { .doll-big { max-width: 240px; } }
+.doll-name { max-width: 300px; margin: 10px auto; }
+.dress-tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
+.dress-tabs .tab { flex: none; white-space: nowrap; }
+@media (min-width: 860px) { .dress-tabs { flex-wrap: wrap; overflow-x: visible; } .dress-tabs .tab { font-size: 17px; min-height: 48px; padding: 6px 12px; } }
+@media (max-width: 859px) { .dress-left .row .btn { flex: 1 1 140px; } }
+.item-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 10px; margin: 10px 0; }
+@media (max-width: 420px) { .item-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.item-tile { display: flex; flex-direction: column; align-items: center; gap: 4px; min-height: 150px; padding: 8px 6px; border-radius: 16px;
+  border: 3px solid var(--line); background: var(--card); color: var(--ink); font: inherit; cursor: pointer; text-align: center; }
+.item-tile.on { border-color: var(--ok); box-shadow: 0 0 0 3px var(--ok-soft); }
+.item-tile.locked .item-preview { opacity: 0.6; }
+.item-tile.locked.can-buy { border-color: var(--gold); }
+.item-tile.locked.can-buy .item-state { color: var(--ink); background: var(--gold-soft); border-radius: 999px; padding: 0 8px; }
+.item-preview { width: 84px; height: 84px; display: flex; align-items: center; justify-content: center; }
+.doll-tile { width: 84px; height: 84px; display: block; }
+.item-name { font-weight: 800; font-size: 16px; line-height: 1.2; }
+.item-state { font-size: 16px; color: var(--muted); font-weight: 700; }
+.item-tile.on .item-state { color: var(--ok); }
+.swatch { width: 60px; height: 60px; border-radius: 50%; border: 3px solid var(--line); display: block; }
+.offer-doll { display: flex; justify-content: center; }
+.offer-doll .doll-big { max-width: 200px; }
+.looks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+.look-card { display: flex; flex-direction: column; align-items: center; gap: 6px; background: var(--card); border-radius: var(--radius); padding: 10px; box-shadow: var(--shadow); }
+.look-wear { background: none; border: 0; padding: 0; cursor: pointer; border-radius: 12px; }
+.look-wear .doll-tile { width: 120px; height: 180px; }
+/* wardrobe gift in a pack opening */
+.flip-doll { width: 80px; height: 90px; display: flex; align-items: center; justify-content: center; }
+.flip-doll .doll { width: 80px; height: 90px; }

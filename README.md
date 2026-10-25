@@ -2,7 +2,9 @@
 
 A practice app for the NIDO HUM Spelling Whizz 2026 grand final (ages 6–8, 28 October 2026). It works offline, needs no install, and keeps everything in this browser.
 
-**New in this update:** the official 9–11 word list, a 🔤 **A to Z** tab that covers every word on both lists, a 🔥 **Extremely hard** tab, and a real 📒 **sticker book** (96 stickers, including the yarn 🧶) with stars, a sticker shop and lots more to unlock. Her saved progress, stickers, settings, plan and word changes all carry over.
+**Newest:** a 👗 **Dress-up studio** (dress a doll with things she buys with her stars), the board theme she picks now shows as the **background of the whole app**, a ✨ **golden word** each day, and 73 more theme words (Pakistan geography, animals and silent letters).
+
+**Earlier update:** the official 9–11 word list, a 🔤 **A to Z** tab that covers every word on both lists, a 🔥 **Extremely hard** tab, and a real 📒 **sticker book** (96 stickers, including the yarn 🧶) with stars, a sticker shop and lots more to unlock. Her saved progress, stickers, settings, plan and word changes all carry over.
 
 ## On a phone or tablet (from a web address)
 - Open the app's web address (for example the GitHub Pages link) in Safari on an iPhone or iPad, or in Chrome on Android. Nothing to install, and no git or GitHub steps on the phone.
@@ -30,8 +32,8 @@ A practice app for the NIDO HUM Spelling Whizz 2026 grand final (ages 6–8, 28 
   - **Medium:** one step up.
   - **Hard:** includes words asked to ages 9–11.
 - **New row: 9–11 list.** Easy ☑ · Medium ☑ · Hard ☑ · Extremely hard ☐. Each box shows mastered / total words.
-- The default plan is Easy and Medium of every theme, all round-2 focus words, and the Easy, Medium and Hard 9–11 words: **1,964 words** in total. In the Parent area, tick Hard for the one or two themes she is strongest in.
-- **Plan size warning.** Under the plan grid the app says, for example, "At 40 words a day you can cover about 200 of 1,964 words before the final." If the plan is too big, a **Make it fit** button suggests which hard tiers to untick. Nothing changes until you tap it and confirm. The plan is very large compared with the days left, so don't worry about covering it all: Today's practice always puts missed and review words first.
+- The default plan is Easy and Medium of every theme, all round-2 focus words, and the Easy, Medium and Hard 9–11 words: **2,016 words** in total. In the Parent area, tick Hard for the one or two themes she is strongest in.
+- **Plan size warning.** Under the plan grid the app says, for example, "At 40 words a day you can cover about 200 of 2,016 words before the final." If the plan is too big, a **Make it fit** button suggests which hard tiers to untick. Nothing changes until you tap it and confirm. The plan is very large compared with the days left, so don't worry about covering it all: Today's practice always puts missed and review words first.
 - **Mastered** means the word reached the top review box, with right answers on at least 2 different days.
 - **Strategy tips:**
   - **Round 1:** which theme has her best accuracy.
@@ -86,11 +88,21 @@ To start A–Z again, use Parent area → Reset → **Reset A–Z progress** (no
 - **Sticker shop:** she can spend **15 stars** to choose any sticker she doesn't have yet. That is how she can always get the yarn.
 - **Rarity:** most stickers are common; rare ones have a sparkly border and legendary ones are gold and shining. New stickers she doesn't have yet come first, and she never gets the same sticker twice in a row.
 - **The sticker book** has a page for each of the 8 packs (Cosy crafts, Sweet treats, Animal friends, Ocean, Garden, Space, Magic, Fun and games), with collected stickers in colour and missing ones as "?" slots. Tap a sticker to see it big. A **Badges** page has the 26 golden letters and the trophies: first Mock Final, 130, 140 and 150 points, a new personal best, a 3-day streak, and A to Z Champion.
-- **Unlocks:** each completed pack unlocks a new **board theme** (for example Candy land, Ocean, Space, Garden), and every 10 different stickers unlock a new **board token**. Choose them on the **My board** page.
+- **Unlocks:** each completed pack unlocks a new **board theme** (for example Candy land, Ocean, Space, Garden), and every 10 different stickers unlock a new **board token**. Choose them on the **My board** page. The theme she picks becomes the **background of the whole app** (soft colours with floating pictures) as well as the board's colours. A grown-up can turn the background off in Settings.
 - **Ollie the owl** cheers her on with lots of different lines (never the same twice in a row) and says a short cheer every few right answers. You can turn the spoken cheer off in Settings.
 - **Brain break:** after 20 minutes of practice the app offers a one-minute stretch ("Reach up high! Touch your toes!"). A grown-up can tap **Parent: skip**, or turn it off in Settings.
 - **My progress** now has a practice calendar with a sticker on every day she practised, up to the final.
 - Sound effects stay gentle and can be muted with the 🔔 button. Animations calm down if the device is set to reduce motion.
+
+## 👗 The Dress-up studio
+- Open it from the **Dress-up studio** tile on the Home screen. Her doll is shown on the tile.
+- **19 wardrobe tabs** with about 140 things: outfits (sundress, top and skirt, sporty, **shalwar kameez**, jumpsuit, party dress, ballet tutu, ball gown, **lehenga**), colours and patterns, hairstyles and hair colours, shoes, eyes, eyeshadow, lipstick, cheeks, face paint, things for her head (bow, tiara, crown, bunny ears, a **headscarf**…), glasses, necklaces, something to hold, wings and capes, pets, backdrops (including the Hunza mountains) and skin tones.
+- Basic items are free. The rest cost **stars**, from 5 to 40: every right answer gives a star. Tapping a locked item shows the doll **trying it on** first, then **Get it for ⭐ N** (or how many more stars she needs).
+- **Wardrobe gifts:** finishing a board, an A–Z part or Today's goal also gives a surprise item for the doll, inside the sticker pack. **Wear it now** puts it straight on.
+- **🎲 Surprise me** dresses the doll in a random outfit from what she has. **📸 Save this look** keeps up to 6 looks in **My looks**. She can also give the doll a name.
+
+## ✨ Golden word of the day
+- One word in Today's practice each day is the golden word. Its question says "Golden word! Spell it right for 5 bonus stars". Right first or on a later try, it gives 5 extra stars, once a day.
 
 ## Adding words and printing lists
 - To get in, press and hold the **Parent area** button for 3 seconds.
@@ -102,11 +114,12 @@ To start A–Z again, use Parent area → Reset → **Reset A–Z progress** (no
 
 ## Backup and restore
 - Your progress lives only in this browser. Every 100 answers or 3 days, the Home screen reminds you to **Download backup**.
-- Backups now include the A–Z progress and the sticker book. Backups made before this update still restore.
+- Backups now include the A–Z progress, the sticker book and the dress-up doll. Backups made before this update still restore (the doll starts fresh).
+- **Moving between laptops:** a backup from either version of the app restores into the other. An older copy of the app simply ignores the doll. Easiest is to open the same web address on both laptops, so both always have the newest version.
 - To restore, go to Parent area → Export and backup → Restore. You will see what is in the backup and be asked to confirm. The current data is saved in the browser first.
 
 ## Updating the word list (for grown-ups comfortable with a computer)
-1. Edit or replace `data/words.json` (schema_version 2).
+1. Edit or replace `data/words.json` (schema_version 2). To add words from a CSV file (same columns as `data/add-words-template.csv`), run `node tools/merge-words.mjs your-words.csv`. That is how `theme-extra-words.csv` was added.
 2. Run `node tools/build-words-js.mjs`. It checks the list and rebuilds `js/data/words.js`, then prints the counts (all words, each list, A–Z words per letter, 9–11 bands, theme tiers). If anything is wrong, it stops and names the record.
 3. Run `node tools/build-sw.mjs` so phones pick up the change (it updates the offline copy list in `sw.js`).
 4. Run the tests with `node --test` (no install needed). For the optional browser checks, run `node tools/browser-check.mjs` (laptop) and `node tools/mobile-check.mjs` (every screen on 7 phone and tablet sizes, plus offline). Both need Node 18 or newer, and Chrome or Edge.
@@ -152,7 +165,15 @@ To start A–Z again, use Parent area → Reset → **Reset A–Z progress** (no
   - The board token is her avatar until she picks an unlocked token.
   - Some newer emoji (the needle, coral, seal, pot plant, magic wand, bubbles and roller skate) can't be drawn by older devices such as Windows 10. There the app shows a similar emoji instead (for example a safety pin for the needle); the sticker's name doesn't change.
 - **Brain break:** practice time counts the time between answers (gaps of 3 minutes or more don't count). Skipping counts as a break, so it isn't offered again for another 20 minutes.
-- **Reset → Clear practice progress** now also clears the A–Z progress and the sticker book (stars, stickers, badges, trophies).
+- **Reset → Clear practice progress** now also clears the A–Z progress, the sticker book (stars, stickers, badges, trophies) and the dress-up wardrobe.
+- **Theme extra words:** the 73 words in `theme-extra-words.csv` are part of the built-in word list (source `finale_theme_extra`), so they are on every device without importing. They are round-1 theme words, not on either official list, so they are not in the A–Z tab. Their difficulty, and so their round-2 level, was estimated from the spelling.
+- **Dress-up:**
+  - The doll is saved as a new part of the saved data without changing its version number, so backups go both ways between this version and the previous one.
+  - Wardrobe gifts pick something she doesn't have yet; cheaper items come up more often. When she has everything, packs carry no gift.
+  - Skin tones and the headscarf are always free.
+  - The doll is drawn with shapes and emoji, so it works offline and needs no picture files.
+- **Golden word:** chosen from the next 10 words in the day's queue, the same for the whole day. Undoing the answer takes the bonus stars back.
+- **Background:** the background picture only shows for unlocked themes other than Classic, and never when printing.
 - **Phones:**
   - The 3-second parent hold listens to the finger directly, because a long press otherwise opens the phone's own menu and cancels the hold.
   - On narrow screens the study plan shows each tick above its count, so all four columns fit without swiping.
@@ -174,3 +195,5 @@ Open `index.html` from the folder, then:
 11. Finish the part: a sticker pack opens, and X becomes a golden letter.
 12. In the sticker book, open the shop and buy the yarn (you need 15 stars). Check the "collected" count goes up.
 13. Open the Extremely hard tab and start the A–F board.
+14. In the sticker book's **My board** page, pick a theme and check it becomes the background.
+15. Open the Dress-up studio, try on a locked item, buy one with stars, and save a look.

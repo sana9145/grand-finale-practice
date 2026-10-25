@@ -170,7 +170,7 @@ check(errors.length === 0, 'Loads with no errors' + (errors.length ? ': ' + erro
 check(await ev('["home","today","mock","board","legacy","parent","plan","settings","editor","wordForm","import","backup","print","history","reset","strategy","progress","az","azLetter","azList","azPlay","extreme","extremeList","stickers","shop"].every(s => typeof App.screens[s] === "function")'), 'All screens loaded');
 check(await ev('!!document.querySelector(".mode.today")'), 'Home screen renders');
 check(await ev('/days? to the final|final is today|final was/.test(document.body.innerText)'), 'Countdown shows');
-check(await ev('/Plan: \\d+ of 1964 words mastered/.test(document.body.innerText)'), 'Plan progress shows 1,964 words');
+check(await ev('/Plan: \\d+ of 2016 words mastered/.test(document.body.innerText)'), 'Plan progress shows 2,016 words');
 check(await ev('document.title') === 'Grand Finale Practice', 'Page title is plain');
 const mode = await ev('UI.speech.mode()');
 console.log('  (speech mode in headless browser: ' + mode + ')');
@@ -313,7 +313,7 @@ async function closePacks() {
     await sleep(500);
     const open = await ev('!!document.querySelector(".pack-back")');
     if (!open) return;
-    await clickText('Put them in my book');
+    await clickText(await ev('document.body.innerText.includes("Keep them")') ? 'Keep them' : 'Put them in my book');
   }
 }
 await clickText('🏠', 'button');
@@ -359,9 +359,9 @@ check(await ev('/Letters done: 1 of 26/.test(document.body.innerText)'), 'A-Z he
 // pack opening shows when a pack is waiting
 await ev('App.givePack("the browser check"); App.save(); App.rerender(); true');
 await sleep(2000);
-check(await ev('document.querySelectorAll(".pack-back .flip").length') === 3, 'Pack opening shows 3 cards');
+check(await ev('document.querySelectorAll(".pack-back .flip:not(.gift)").length') === 3, 'Pack opening shows 3 sticker cards');
 await screenshot('12-pack-opening');
-await clickText('Put them in my book');
+await closePacks();
 
 // sticker shop: buy the yarn
 await ev('App.state.rewards.stars = 15; delete App.state.rewards.owned.yarn; App.syncStickers(); App.save(); App.rerender(); true');
@@ -395,6 +395,64 @@ await clickText('Parent: skip', '.modal button');
 check(await ev('App.state.rewards.breakDue === false && App.state.rewards.practiceMs === 0'), 'Skipping the brain break resets the timer');
 await ev('App.state.settings.brainBreak = false; App.save(); true');
 await closePacks();
+
+// ---- golden word, wardrobe gift, dress-up studio, theme background ----
+console.log('Golden word, dress-up and background');
+await clickText('🏠', 'button');
+await ev('App.state.sessions.today = null; App.save(); true');
+await clickText("Today's practice");
+await ev('const s = App.state.sessions.today; s.golden = s.card.id; s.goldenDone = false; App.rerender(); true');
+// (look for the label itself: its text is masked too if the hidden word happens to be "gold" or "word")
+check(await ev('!!document.querySelector(".card-head .chip.golden")'), 'Golden word is marked on its question');
+await wordHidden('Golden word');
+const starsBefore = await ev('App.state.rewards.stars');
+await checkIfNeeded(); await clickText('Right');
+check(await ev('App.state.rewards.stars') === starsBefore + 6, 'Golden word right: 1 star + 5 bonus stars');
+check(await ev('App.state.sessions.today.goldenDone === true'), 'The golden word only pays once');
+await clickText('Undo last answer');
+check(await ev('App.state.rewards.stars') === starsBefore && await ev('!App.state.sessions.today.goldenDone'), 'Undo takes the golden stars back');
+await closePacks();
+// a pack brings a wardrobe gift, and "Wear it now" puts it on
+const owned0 = await ev('GF.dress.counts(App.state.dress).owned');
+await ev('App.state.rewards.pending = []; App.givePack("the browser check"); App.rerender(); true');
+await sleep(2200);
+check(await ev('!!document.querySelector(".pack-back .flip.gift")'), 'A pack comes with a wardrobe gift card');
+const giftId = await ev('App.state.rewards.pending[0].dress');
+await clickText('Wear it now');
+check(await ev('GF.dress.counts(App.state.dress).owned') === owned0 + 1, 'The gift is in the wardrobe');
+check(await ev(`App.state.ui.screen === 'dress' && Object.values(App.state.dress.look).includes(${JSON.stringify(giftId)})`), '"Wear it now" opens the studio wearing the gift');
+await screenshot('15-dress-studio');
+// buy something with stars
+await ev("App.state.rewards.stars = 40; App.go('dress', { slot: 'back' }); true");
+const locked = await ev("(() => { const t = [...document.querySelectorAll('.item-tile.locked')].find(x => /Fairy wings/.test(x.textContent)); if (!t) return false; t.click(); return true; })()");
+check(locked, 'Locked fairy wings can be tried on');
+await sleep(150);
+await clickText('Get it for', '.modal button');
+check(await ev("App.state.rewards.stars === 10 && App.state.dress.owned['bk-fairy'] === 1 && App.state.dress.look.back === 'bk-fairy'"), 'Buying the fairy wings spends 30 stars and puts them on');
+await ev("App.state.rewards.stars = 3; App.go('dress', { slot: 'pet' }); [...document.querySelectorAll('.item-tile.locked')][0].click(); true");
+await sleep(150);
+check(await ev("document.querySelector('.modal').innerText.includes('more stars')"), 'Not enough stars: it says how many more she needs');
+await clickText('OK', '.modal button');
+check(await ev('App.state.rewards.stars') === 3, 'Not enough stars: nothing is spent');
+await clickText('Save this look');
+check(await ev('App.state.dress.looks.length') === 1, 'A look can be saved');
+await ev("document.getElementById('doll-name').value = 'Mimi'; document.getElementById('doll-name').dispatchEvent(new Event('change')); true");
+check(await ev('App.state.dress.name') === 'Mimi', "The doll's name can be changed");
+// the board theme becomes the app background, and the parent can turn it off
+await ev("GF.stickers.ALL.forEach(x => { App.state.rewards.owned[x.id] = 1; }); App.syncStickers(); App.go('stickers', { page: 'board' }); true");
+await clickText('Ocean', '.choice');
+check(await ev("document.querySelector('.bg-layer').classList.contains('bg-ocean') && getComputedStyle(document.querySelector('.bg-layer')).display === 'block'"), 'Picking the Ocean board makes it the app background');
+await clickText('🏠', 'button');
+check(await ev("document.querySelector('.bg-layer').classList.contains('bg-ocean')"), 'The background stays on other screens');
+await screenshot('16-ocean-background');
+await ev("App.state.settings.themeBg = false; App.save(); App.rerender(); true");
+check(await ev("getComputedStyle(document.querySelector('.bg-layer')).display === 'none'"), 'Settings can turn the background off');
+await ev("App.state.settings.themeBg = true; App.save(); App.rerender(); true");
+// the doll is in the backup
+const bk = await ev('JSON.stringify(GF.storage.makeBackup(App.state, Date.now()))');
+const back = await ev(`(() => { const r = GF.storage.readBackup(${JSON.stringify(bk)}, Date.now()); return r.ok && r.state.dress.name === 'Mimi' && r.state.dress.owned['bk-fairy'] === 1; })()`);
+check(back, 'The backup carries the doll, her name and her wardrobe');
+await ev("App.go('progress'); true");
 
 // Extremely hard tab
 await clickText('🏠', 'button');
@@ -454,7 +512,7 @@ await clickText('Print lists');
 await S('Emulation.setEmulatedMedia', { media: 'print' });
 await sleep(150);
 const pr = await ev('(() => { const s = document.querySelector(".print-sheet"); const l = document.querySelector(".plist"); const top = document.querySelector(".topbar"); return { visible: s && getComputedStyle(s).display !== "none", cols: l && getComputedStyle(l).columnCount, top: top && getComputedStyle(top).display, items: document.querySelectorAll(".plist li").length }; })()');
-check(pr.visible && pr.cols === '2' && pr.top === 'none' && pr.items === 42, `Print view: list visible, 2 columns, header hidden, ${pr.items} words (Geography easy)`);
+check(pr.visible && pr.cols === '2' && pr.top === 'none' && pr.items === 48, `Print view: list visible, 2 columns, header hidden, ${pr.items} words (Geography easy)`);
 const pdf = await S('Page.printToPDF', { printBackground: false });
 writeFileSync(join(outDir, '06-print-geography-easy.pdf'), Buffer.from(pdf.data, 'base64'));
 await S('Emulation.setEmulatedMedia', { media: '' });
