@@ -15188,6 +15188,42 @@
    "notes": ""
   },
   {
+   "id": "champagne",
+   "word": "champagne",
+   "display": "champagne",
+   "letter": "C",
+   "pos": "noun",
+   "meaning": "A bubbly drink from France that people use to celebrate.",
+   "sentence": "The racing driver sprayed champagne after winning the race.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "written_by_claude",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "hard"
+   },
+   "silent_letters": [
+    "g"
+   ],
+   "silent_pattern": "g",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "champion",
    "word": "champion",
    "display": "champion",
@@ -22373,6 +22409,42 @@
    "theme_tier": {},
    "silent_letters": [],
    "silent_pattern": null,
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "damn",
+   "word": "damn",
+   "display": "damn",
+   "letter": "D",
+   "pos": "interjection",
+   "meaning": "A word some grown-ups say when they are cross. It is not a polite word.",
+   "sentence": "The grumpy pirate in the story shouted \"Damn!\" when he dropped his map.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "written_by_claude",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "medium"
+   },
+   "silent_letters": [
+    "n"
+   ],
+   "silent_pattern": "dsnp",
    "sound_alike_with": [],
    "spelling_note": "",
    "final_2025": null,
@@ -74740,6 +74812,42 @@
    "notes": ""
   },
   {
+   "id": "obscene",
+   "word": "obscene",
+   "display": "obscene",
+   "letter": "O",
+   "pos": "adjective",
+   "meaning": "Shocking and very wrong, or very rude.",
+   "sentence": "Throwing food away when people are hungry is obscene.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "written_by_claude",
+   "page": null,
+   "difficulty": 2,
+   "level": "medium",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "hard"
+   },
+   "silent_letters": [
+    "c"
+   ],
+   "silent_pattern": "c",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
    "id": "observant",
    "word": "observant",
    "display": "observant",
@@ -85170,6 +85278,42 @@
    "text_source": "written_by_claude",
    "page": null,
    "difficulty": 4,
+   "level": "hard",
+   "round2_focus": false,
+   "band_9_11": null,
+   "extreme": false,
+   "in_az": false,
+   "themes": [
+    "silent_letter"
+   ],
+   "theme_tier": {
+    "silent_letter": "hard"
+   },
+   "silent_letters": [
+    "p"
+   ],
+   "silent_pattern": "dsnp",
+   "sound_alike_with": [],
+   "spelling_note": "",
+   "final_2025": null,
+   "needs_review": false,
+   "notes": ""
+  },
+  {
+   "id": "psychotic",
+   "word": "psychotic",
+   "display": "psychotic",
+   "letter": "P",
+   "pos": "adjective",
+   "meaning": "Having a serious illness of the mind that makes it hard to tell what is real.",
+   "sentence": "Doctors can help people who are psychotic to get better.",
+   "say_as": "",
+   "sources": [
+    "finale_theme_extra"
+   ],
+   "text_source": "written_by_claude",
+   "page": null,
+   "difficulty": 3,
    "level": "hard",
    "round2_focus": false,
    "band_9_11": null,

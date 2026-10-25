@@ -170,7 +170,7 @@ check(errors.length === 0, 'Loads with no errors' + (errors.length ? ': ' + erro
 check(await ev('["home","today","mock","board","legacy","parent","plan","settings","editor","wordForm","import","backup","print","history","reset","strategy","progress","az","azLetter","azList","azPlay","extreme","extremeList","stickers","shop"].every(s => typeof App.screens[s] === "function")'), 'All screens loaded');
 check(await ev('!!document.querySelector(".mode.today")'), 'Home screen renders');
 check(await ev('/days? to the final|final is today|final was/.test(document.body.innerText)'), 'Countdown shows');
-check(await ev('/Plan: \\d+ of 2165 words mastered/.test(document.body.innerText)'), 'Plan progress shows 2,165 words');
+check(await ev('/Plan: \\d+ of 2166 words mastered/.test(document.body.innerText)'), 'Plan progress shows 2,166 words');
 check(await ev('document.title') === 'Grand Finale Practice', 'Page title is plain');
 const mode = await ev('UI.speech.mode()');
 console.log('  (speech mode in headless browser: ' + mode + ')');

@@ -109,10 +109,10 @@ function runTool(data) {
   }
 }
 
-test('build tool accepts the real data and reports 3,662 words', () => {
+test('build tool accepts the real data and reports 3,666 words', () => {
   const r = runTool(bank);
   assert.strictEqual(r.code, 0);
-  assert.match(r.stdout, /Total words: 3662/);
+  assert.match(r.stdout, /Total words: 3666/);
   assert.match(r.out, /^\/\/ GENERATED/);
   assert.match(r.out, /window\.WORD_BANK = \{/);
 });

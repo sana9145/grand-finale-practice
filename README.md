@@ -2,7 +2,7 @@
 
 A practice app for the NIDO HUM Spelling Whizz 2026 grand final (ages 6–8, 28 October 2026). It works offline, needs no install, and keeps everything in this browser.
 
-**Newest:** a 👗 **Dress-up studio** (dress a doll with things she buys with her stars), the board theme she picks now shows as the **background of the whole app**, a ✨ **golden word** each day, and the words from your own lists: 73 theme words from `theme-extra-words.csv`, plus 263 more from your printed animal, geography and silent-letter lists, the pasted Hard list and `List finale.pdf` (3,662 words in all).
+**Newest:** a 👗 **Dress-up studio** (dress a doll with things she buys with her stars), the board theme she picks now shows as the **background of the whole app**, a ✨ **golden word** each day, and the words from your own lists: 73 theme words from `theme-extra-words.csv`, plus 263 more from your printed animal, geography and silent-letter lists, the pasted Hard list and `List finale.pdf` (3,666 words in all).
 
 **Earlier update:** the official 9–11 word list, a 🔤 **A to Z** tab that covers every word on both lists, a 🔥 **Extremely hard** tab, and a real 📒 **sticker book** (96 stickers, including the yarn 🧶) with stars, a sticker shop and lots more to unlock. Her saved progress, stickers, settings, plan and word changes all carry over.
 
@@ -32,8 +32,8 @@ A practice app for the NIDO HUM Spelling Whizz 2026 grand final (ages 6–8, 28 
   - **Medium:** one step up.
   - **Hard:** includes words asked to ages 9–11.
 - **New row: 9–11 list.** Easy ☑ · Medium ☑ · Hard ☑ · Extremely hard ☐. Each box shows mastered / total words.
-- The default plan is Easy and Medium of every theme, all round-2 focus words, and the Easy, Medium and Hard 9–11 words: **2,165 words** in total. In the Parent area, tick Hard for the one or two themes she is strongest in.
-- **Plan size warning.** Under the plan grid the app says, for example, "At 40 words a day you can cover about 200 of 2,165 words before the final." If the plan is too big, a **Make it fit** button suggests which hard tiers to untick. Nothing changes until you tap it and confirm. The plan is very large compared with the days left, so don't worry about covering it all: Today's practice always puts missed and review words first.
+- The default plan is Easy and Medium of every theme, all round-2 focus words, and the Easy, Medium and Hard 9–11 words: **2,166 words** in total. In the Parent area, tick Hard for the one or two themes she is strongest in.
+- **Plan size warning.** Under the plan grid the app says, for example, "At 40 words a day you can cover about 200 of 2,166 words before the final." If the plan is too big, a **Make it fit** button suggests which hard tiers to untick. Nothing changes until you tap it and confirm. The plan is very large compared with the days left, so don't worry about covering it all: Today's practice always puts missed and review words first.
 - **Mastered** means the word reached the top review box, with right answers on at least 2 different days.
 - **Strategy tips:**
   - **Round 1:** which theme has her best accuracy.
@@ -167,11 +167,12 @@ To start A–Z again, use Parent area → Reset → **Reset A–Z progress** (no
 - **Brain break:** practice time counts the time between answers (gaps of 3 minutes or more don't count). Skipping counts as a break, so it isn't offered again for another 20 minutes.
 - **Reset → Clear practice progress** now also clears the A–Z progress, the sticker book (stars, stickers, badges, trophies) and the dress-up wardrobe.
 - **Words from your lists (photos, pasted Hard list, `List finale.pdf`):**
-  - 263 new words, each with a meaning and an example sentence written for her age. Words that were already in the app were not added again; 69 of them were given the theme your list puts them in (for example "mountain" is now a Geography word and "yacht" a Silent letters word).
+  - 267 new words, each with a meaning and an example sentence written for her age. Words that were already in the app were not added again; 69 of them were given the theme your list puts them in (for example "mountain" is now a Geography word and "yacht" a Silent letters word).
   - Theme words keep the tier your list gives them (Easy or Difficult = Hard). Words from the silent-letter charts had no tier, so they got one from how hard they are.
   - Words from `List finale.pdf` are round-2 practice words at the level the PDF gives (Easy, Medium, Hard). They are marked as focus words, so they are in Today's practice and the Mock Final's round 2. Their source is `parent_list`, which counts for both rounds.
   - Two new silent-letter groups: **Silent e** (breathe, please…) and **Other silent letters** (a in "logically", ch in "yacht", i in "business").
-  - Not added: "favourite" and "honour", because the official list already has the American spellings "favorite" and "honor", and the competition follows those. Also left out as unsuitable for a 6-year-old: "damn", "obscene", "psychotic" and "champagne".
+  - Not added: "favourite" and "honour", because the official list already has the American spellings "favorite" and "honor", and the competition follows those.
+  - "damn", "obscene", "psychotic" and "champagne" were added at the parent's request, with gentle, factual meanings and sentences.
   - In the pasted list, "rhinoceros" is marked with a silent c. Its silent letter is the h, so the app marks the h.
 - **Theme extra words:** the 73 words in `theme-extra-words.csv` are part of the built-in word list (source `finale_theme_extra`), so they are on every device without importing. They are round-1 theme words, not on either official list, so they are not in the A–Z tab. Their difficulty, and so their round-2 level, was estimated from the spelling.
 - **Dress-up:**

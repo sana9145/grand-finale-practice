@@ -282,7 +282,7 @@ ok(reg, 'The offline helper is installed after the first visit');
 await sleep(800);
 await S('Network.emulateNetworkConditions', { offline: true, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
 await load(base + 'index.html');
-ok(await ev(`!!(window.App && App.words && App.words.length === 3662 && document.querySelector('.screen') && !/Oops/.test(document.body.innerText))`), 'With no internet the app still opens, with all 3,662 words');
+ok(await ev(`!!(window.App && App.words && App.words.length === 3666 && document.querySelector('.screen') && !/Oops/.test(document.body.innerText))`), 'With no internet the app still opens, with all 3,666 words');
 await S('Network.emulateNetworkConditions', { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
 ok(await ev(`!!document.querySelector('link[rel=manifest]') && !!document.querySelector('link[rel=apple-touch-icon]')`), 'Home-screen icon and app manifest are linked');
 
@@ -300,7 +300,7 @@ const emb = await ev(`(async () => {
   const copyBox = !!w.document.querySelector('.copybox');
   return { embedded: App.embedded, printHidden, copyBox, words: App.words.length };
 })()`);
-ok(emb.embedded && emb.printHidden && emb.copyBox && emb.words === 3662, `Inside another page: print buttons hidden, backup shown as text to copy (${JSON.stringify(emb)})`);
+ok(emb.embedded && emb.printHidden && emb.copyBox && emb.words === 3666, `Inside another page: print buttons hidden, backup shown as text to copy (${JSON.stringify(emb)})`);
 
 await browser.close();
 server.close();

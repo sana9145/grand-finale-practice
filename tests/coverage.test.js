@@ -12,7 +12,7 @@ test('the app loads exactly the words in data/words.json', () => {
   const text = fs.readFileSync(path.join(root, 'js', 'data', 'words.js'), 'utf8');
   const json = text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1);
   const built = JSON.parse(json);
-  assert.strictEqual(built.words.length, 3662);
+  assert.strictEqual(built.words.length, 3666);
   assert.deepStrictEqual(built, bank, 'js/data/words.js is out of date: run node tools/build-words-js.mjs');
 });
 
@@ -49,7 +49,7 @@ test('every word can come up in practice (a theme, round 2, a 9-11 band, or the 
   for (const L of A.LETTERS) add(A.letterIds(words, L, { list: 'both', extreme: true }));
   const missing = words.filter((w) => !reach.has(w.id)).map((w) => w.id);
   assert.deepStrictEqual(missing, []);
-  assert.strictEqual(reach.size, 3662);
+  assert.strictEqual(reach.size, 3666);
 });
 
 test('every word on an official list is in the A-Z tab, in its own letter', () => {
